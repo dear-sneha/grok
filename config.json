@@ -1,0 +1,26 @@
+{
+  "grok_email": "swordofshivaji@gmail.com",
+  "grok_password": "#Bhawani192",
+  "mode": "textToVideo",
+  "aspect_ratio": "9:16",
+  "video_length": "10s",
+  "video_quality": "720p",
+  "output_count": 2,
+  "concurrent_prompts": 1,
+  "prompt_delay_seconds": 3,
+  "max_retries": 3,
+  "output_folder": "./output",
+  "auto_upload_drive": false,
+  "drive_folder": "",
+  "drive_parent_id": "",
+  "drive_make_public": false,
+  "auto_upload_youtube": false,
+  "youtube_privacy": "private",
+  "youtube_description": "Generated with Grok Automation.",
+  "youtube_tags": [
+    "AI",
+    "Grok",
+    "automation"
+  ],
+  "headless": false
+}

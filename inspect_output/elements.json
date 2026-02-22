@@ -1,0 +1,1351 @@
+{
+  "buttons": [
+    {
+      "tag": "BUTTON",
+      "text": "SearchCtrl+K",
+      "attrs": {
+        "data-sidebar": "menu-button",
+        "data-active": "false",
+        "class": "peer/menu-button flex items-center gap-2 overflow-hidden text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover flex-1 px-[7px] rounded-full border border-border-l1 bg-surface-l1 justify-start text-primary select-none h-[2.5rem] mx-[.125rem]",
+        "aria-label": "Search"
+      },
+      "className": "peer/menu-button flex items-center gap-2 overflow-hidden text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover flex-1 px-[7px] rounded-full border border-border-l1 bg-surface-l1 justify-start text-primary select-none h-[2.5rem] mx-[.125rem]",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button data-sidebar=\"menu-button\" data-active=\"false\" class=\"peer/menu-button flex items-center gap-2 overflow-hidden text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&amp;&gt;span:last-"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed [&_svg]:shrink-0 select-none text-fg-secondary hover:text-fg-primary hover:bg-button-ghost-hover disabled:hover:text-fg-secondary disabled:hover:bg-transparent [&_svg]:hover:text-fg-primary h-6 w-6 ms-auto opacity-0 group-hover/menu-item:opacity-100 transition-opacity duration-100 rounded-lg",
+        "type": "button",
+        "aria-label": "Create new project"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed [&_svg]:shrink-0 select-none text-fg-secondary hover:text-fg-primary hover:bg-button-ghost-hover disabled:hover:text-fg-secondary disabled:hover:bg-transparent [&_svg]:hover:text-fg-primary h-6 w-6 ms-auto opacity-0 group-hover/menu-item:opacity-100 transition-opacity duration-100 rounded-lg",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed [&amp;_svg]:shrink-0 select-none text-fg-secondar"
+    },
+    {
+      "tag": "DIV",
+      "text": "History",
+      "attrs": {
+        "role": "button",
+        "tabindex": "0",
+        "aria-label": "History",
+        "class": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row justify-start gap-1 bg-surface-base text-primary text-sm rounded-xl group/sidebar-item transition-colors p-[0.375rem] focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent",
+        "data-sidebar": "menu-button",
+        "data-active": "false"
+      },
+      "className": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row justify-start gap-1 bg-surface-base text-primary text-sm rounded-xl group/sidebar-item transition-colors p-[0.375rem] focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div role=\"button\" tabindex=\"0\" aria-label=\"History\" class=\"peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&amp;&gt;s"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "data-slot": "button",
+        "class": "items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-secondary hover:bg-button-ghost-hover hover:text-fg-primary disabled:hover:bg-transparent border border-transparent rounded-full overflow-hidden h-10 w-10 flex p-1",
+        "type": "button",
+        "id": "radix-_r_1u_",
+        "aria-haspopup": "menu",
+        "aria-expanded": "false",
+        "data-state": "closed"
+      },
+      "className": "items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-secondary hover:bg-button-ghost-hover hover:text-fg-primary disabled:hover:bg-transparent border border-transparent rounded-full overflow-hidden h-10 w-10 flex p-1",
+      "id": "radix-_r_1u_",
+      "visible": true,
+      "outerHTML": "<button data-slot=\"button\" class=\"items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Toggle Sidebar",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-secondary hover:text-fg-primary hover:bg-button-ghost-hover disabled:hover:text-fg-secondary disabled:hover:bg-transparent [&_svg]:hover:text-fg-primary h-10 w-10 rounded-full absolute end-2 bottom-3",
+        "type": "button",
+        "data-sidebar": "trigger"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-secondary hover:text-fg-primary hover:bg-button-ghost-hover disabled:hover:text-fg-secondary disabled:hover:bg-transparent [&_svg]:hover:text-fg-primary h-10 w-10 rounded-full absolute end-2 bottom-3",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Upload image",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none border border-border-l2 text-fg-primary hover:bg-button-ghost-hover disabled:hover:bg-transparent h-10 px-4 py-2 rounded-full",
+        "type": "button",
+        "aria-label": "Upload image",
+        "data-state": "closed"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none border border-border-l2 text-fg-primary hover:bg-button-ghost-hover disabled:hover:bg-transparent h-10 px-4 py-2 rounded-full",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-xl px-4 py-2 h-full flex items-start",
+        "type": "button",
+        "aria-label": "Favorites",
+        "data-state": "closed"
+      },
+      "className": "justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-xl px-4 py-2 h-full flex items-start",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink-0 select-none rounded-xl"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-primary hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 w-10 rounded-full group/attach-button",
+        "type": "button",
+        "aria-label": "Attach",
+        "tabindex": "0",
+        "id": "radix-_r_2b_",
+        "aria-haspopup": "menu",
+        "aria-expanded": "false",
+        "data-state": "closed"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-primary hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 w-10 rounded-full group/attach-button",
+      "id": "radix-_r_2b_",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Image",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 py-1.5 text-sm rounded-full text-primary px-3.5 focus:outline-none aria-expanded:bg-button-ghost-hover",
+        "type": "button",
+        "id": "model-select-trigger",
+        "aria-label": "Model select",
+        "aria-haspopup": "menu",
+        "aria-expanded": "false",
+        "data-state": "closed"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 py-1.5 text-sm rounded-full text-primary px-3.5 focus:outline-none aria-expanded:bg-button-ghost-hover",
+      "id": "model-select-trigger",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink-0 select-none hover:bg-b"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "type": "button",
+        "class": "group flex flex-col justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
+        "aria-label": "Start dictation (Ctrl+D)",
+        "data-state": "closed",
+        "tabindex": "0",
+        "style": "opacity: 1;"
+      },
+      "className": "group flex flex-col justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button type=\"button\" class=\"group flex flex-col justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring\" aria-label=\"Start dictation (Ctrl+D)\" data-state=\"closed\" tabindex=\"0\" style=\"opacity: 1;\"><div class=\"h-10 relative aspect-square "
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "group flex flex-col justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
+        "type": "submit",
+        "aria-label": "Submit",
+        "disabled": "",
+        "style": "opacity: 1;"
+      },
+      "className": "group flex flex-col justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"group flex flex-col justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring\" type=\"submit\" aria-label=\"Submit\" disabled=\"\" style=\"opacity: 1;\"><div class=\"h-10 relative aspect-square flex flex-col items-center justify-cent"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "INPUT",
+      "text": "",
+      "attrs": {
+        "class": "hidden",
+        "multiple": "",
+        "accept": "image/*",
+        "type": "file",
+        "name": "files",
+        "style": ""
+      },
+      "className": "hidden",
+      "id": "",
+      "visible": false,
+      "outerHTML": "<input class=\"hidden\" multiple=\"\" accept=\"image/*\" type=\"file\" name=\"files\" style=\"\">"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "contenteditable": "true",
+        "translate": "no",
+        "class": "tiptap ProseMirror w-full px-2 bg-transparent focus:outline-none text-primary align-bottom max-h-[400px] overflow-y-auto !max-w-none prose [&_ul>li>p]:my-0 [&_ol>li>p]:my-0 [&_li>ol]:my-0 [&_li>ul]:my-0 [&_p]:my-0 [&_ul]:my-0 [&_ol]:my-0 min-h-14 py-4 my-0 mb-0 ProseMirror-focused",
+        "tabindex": "0",
+        "style": ""
+      },
+      "className": "tiptap ProseMirror w-full px-2 bg-transparent focus:outline-none text-primary align-bottom max-h-[400px] overflow-y-auto !max-w-none prose [&_ul>li>p]:my-0 [&_ol>li>p]:my-0 [&_li>ol]:my-0 [&_li>ul]:my-0 [&_p]:my-0 [&_ul]:my-0 [&_ol]:my-0 min-h-14 py-4 my-0 mb-0 ProseMirror-focused",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div contenteditable=\"true\" translate=\"no\" class=\"tiptap ProseMirror w-full px-2 bg-transparent focus:outline-none text-primary align-bottom max-h-[400px] overflow-y-auto !max-w-none prose [&amp;_ul&gt;li&gt;p]:my-0 [&amp;_ol&gt;li&gt;p]:my-0 [&amp;_li&gt;ol]:my-0 [&amp;_li&gt;ul]:my-0 [&amp;_p]:my-"
+    },
+    {
+      "tag": "TEXTAREA",
+      "text": "",
+      "attrs": {
+        "tabindex": "-1",
+        "aria-hidden": "true",
+        "style": "min-height: 0px !important; max-height: none !important; height: 0px !important; visibility: hidden !important; overflow: hidden !important; position: absolute !important; z-index: -1000 !important; top: 0px !important; right: 0px !important; display: block !important; border-width: 0px; box-sizing: border-box; font-family: universalSans, Inter, Roboto, \"Open Sans\", Arial, sans-serif, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: -0.1px; line-height: 28px; padding: 16px 8px; tab-size: 4; text-indent: 0px; text-rendering: auto; text-transform: none; width: 596px; word-break: normal; word-spacing: 0px; scrollbar-gutter: auto;"
+      },
+      "className": "",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<textarea tabindex=\"-1\" aria-hidden=\"true\" style=\"min-height: 0px !important; max-height: none !important; height: 0px !important; visibility: hidden !important; overflow: hidden !important; position: absolute !important; z-index: -1000 !important; top: 0px !important; right: 0px !important; display"
+    }
+  ],
+  "allInteractive": [
+    {
+      "tag": "DIV",
+      "text": "SearchCtrl+K\nChat\nCtrl+J\nVoice\nImagine\nProjects\nHistory\nToggle Sidebar",
+      "attrs": {
+        "class": "duration-200 inset-y-0 h-svh w-[--sidebar-width] box-content transition-[left,right,width] ease-linear md:flex block group-data-[collapsible=icon]:w-[--sidebar-width-icon] start-0 group-data-[collapsible=offcanvas]:start-[calc(var(--sidebar-width)*-1)] z-50 bg-surface-base border-r border-border-l1 cursor-w-resize"
+      },
+      "className": "duration-200 inset-y-0 h-svh w-[--sidebar-width] box-content transition-[left,right,width] ease-linear md:flex block group-data-[collapsible=icon]:w-[--sidebar-width-icon] start-0 group-data-[collapsible=offcanvas]:start-[calc(var(--sidebar-width)*-1)] z-50 bg-surface-base border-r border-border-l1 cursor-w-resize",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"duration-200 inset-y-0 h-svh w-[--sidebar-width] box-content transition-[left,right,width] ease-linear md:flex block group-data-[collapsible=icon]:w-[--sidebar-width-icon] start-0 group-data-[collapsible=offcanvas]:start-[calc(var(--sidebar-width)*-1)] z-50 bg-surface-base border-r borde"
+    },
+    {
+      "tag": "DIV",
+      "text": "SearchCtrl+K",
+      "attrs": {
+        "data-sidebar": "group",
+        "class": "relative w-full min-w-0 flex-col px-1.5 shrink-0 transition-[width,transform,opacity] duration-200 h-subheader-height flex justify-center py-1"
+      },
+      "className": "relative w-full min-w-0 flex-col px-1.5 shrink-0 transition-[width,transform,opacity] duration-200 h-subheader-height flex justify-center py-1",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div data-sidebar=\"group\" class=\"relative w-full min-w-0 flex-col px-1.5 shrink-0 transition-[width,transform,opacity] duration-200 h-subheader-height flex justify-center py-1\"><button data-sidebar=\"menu-button\" data-active=\"false\" class=\"peer/menu-button flex items-center gap-2 overflow-hidden text"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "SearchCtrl+K",
+      "attrs": {
+        "data-sidebar": "menu-button",
+        "data-active": "false",
+        "class": "peer/menu-button flex items-center gap-2 overflow-hidden text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover flex-1 px-[7px] rounded-full border border-border-l1 bg-surface-l1 justify-start text-primary select-none h-[2.5rem] mx-[.125rem]",
+        "aria-label": "Search"
+      },
+      "className": "peer/menu-button flex items-center gap-2 overflow-hidden text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover flex-1 px-[7px] rounded-full border border-border-l1 bg-surface-l1 justify-start text-primary select-none h-[2.5rem] mx-[.125rem]",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button data-sidebar=\"menu-button\" data-active=\"false\" class=\"peer/menu-button flex items-center gap-2 overflow-hidden text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&amp;&gt;span:last-"
+    },
+    {
+      "tag": "DIV",
+      "text": "Chat\nCtrl+J",
+      "attrs": {
+        "data-sidebar": "group",
+        "class": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200"
+      },
+      "className": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div data-sidebar=\"group\" class=\"relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200\"><ul data-sidebar=\"menu\" class=\"flex w-full min-w-0 flex-col cursor-default gap-px\"><li data-sidebar=\"menu-item\" class=\"group/menu-item whitespace-nowrap "
+    },
+    {
+      "tag": "A",
+      "text": "Chat",
+      "attrs": {
+        "class": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row gap-1 group/sidebar-item transition-colors p-[0.375rem] text-sm text-primary focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent",
+        "data-sidebar": "menu-button",
+        "data-active": "false",
+        "data-state": "closed",
+        "href": "/"
+      },
+      "className": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row gap-1 group/sidebar-item transition-colors p-[0.375rem] text-sm text-primary focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<a class=\"peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&amp;&gt;span:last-child]:truncate [&amp;&gt;svg]:shrink-0 h"
+    },
+    {
+      "tag": "SPAN",
+      "text": "Ctrl+J",
+      "attrs": {
+        "class": "text-xs text-secondary ms-auto me-2 opacity-0 group-hover/menu-item:opacity-100 transition-opacity duration-100"
+      },
+      "className": "text-xs text-secondary ms-auto me-2 opacity-0 group-hover/menu-item:opacity-100 transition-opacity duration-100",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<span class=\"text-xs text-secondary ms-auto me-2 opacity-0 group-hover/menu-item:opacity-100 transition-opacity duration-100\">Ctrl+J</span>"
+    },
+    {
+      "tag": "DIV",
+      "text": "Voice",
+      "attrs": {
+        "data-sidebar": "group",
+        "class": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200"
+      },
+      "className": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div data-sidebar=\"group\" class=\"relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200\"><ul data-sidebar=\"menu\" class=\"flex w-full min-w-0 flex-col cursor-default gap-px\"><li data-sidebar=\"menu-item\" class=\"group/menu-item whitespace-nowrap "
+    },
+    {
+      "tag": "A",
+      "text": "Voice",
+      "attrs": {
+        "class": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row gap-1 group/sidebar-item transition-colors p-[0.375rem] text-sm text-primary focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent cursor-pointer hover:text-primary hover:!bg-button-ghost-hover",
+        "data-sidebar": "menu-button",
+        "data-active": "false",
+        "data-state": "closed",
+        "href": "/?voice=true"
+      },
+      "className": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row gap-1 group/sidebar-item transition-colors p-[0.375rem] text-sm text-primary focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent cursor-pointer hover:text-primary hover:!bg-button-ghost-hover",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<a class=\"peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&amp;&gt;span:last-child]:truncate [&amp;&gt;svg]:shrink-0 h"
+    },
+    {
+      "tag": "DIV",
+      "text": "Imagine",
+      "attrs": {
+        "data-sidebar": "group",
+        "class": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200"
+      },
+      "className": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div data-sidebar=\"group\" class=\"relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200\"><ul data-sidebar=\"menu\" class=\"flex w-full min-w-0 flex-col cursor-default gap-px\"><li data-sidebar=\"menu-item\" class=\"group/menu-item whitespace-nowrap "
+    },
+    {
+      "tag": "A",
+      "text": "Imagine",
+      "attrs": {
+        "class": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row gap-1 group/sidebar-item transition-colors p-[0.375rem] text-sm text-primary focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none bg-button-ghost-hover",
+        "data-sidebar": "menu-button",
+        "data-active": "false",
+        "data-state": "closed",
+        "href": "/imagine"
+      },
+      "className": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row gap-1 group/sidebar-item transition-colors p-[0.375rem] text-sm text-primary focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none bg-button-ghost-hover",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<a class=\"peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&amp;&gt;span:last-child]:truncate [&amp;&gt;svg]:shrink-0 h"
+    },
+    {
+      "tag": "DIV",
+      "text": "Projects",
+      "attrs": {
+        "data-sidebar": "group",
+        "class": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200"
+      },
+      "className": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div data-sidebar=\"group\" class=\"relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200\"><ul data-sidebar=\"menu\" class=\"flex w-full min-w-0 flex-col cursor-default gap-px\"><li data-sidebar=\"menu-item\" class=\"group/menu-item whitespace-nowrap "
+    },
+    {
+      "tag": "A",
+      "text": "Projects",
+      "attrs": {
+        "class": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row gap-1 group/sidebar-item transition-colors p-[0.375rem] text-sm text-primary focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent",
+        "data-sidebar": "menu-button",
+        "data-active": "false",
+        "href": "/project"
+      },
+      "className": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row gap-1 group/sidebar-item transition-colors p-[0.375rem] text-sm text-primary focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<a class=\"peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&amp;&gt;span:last-child]:truncate [&amp;&gt;svg]:shrink-0 h"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed [&_svg]:shrink-0 select-none text-fg-secondary hover:text-fg-primary hover:bg-button-ghost-hover disabled:hover:text-fg-secondary disabled:hover:bg-transparent [&_svg]:hover:text-fg-primary h-6 w-6 ms-auto opacity-0 group-hover/menu-item:opacity-100 transition-opacity duration-100 rounded-lg",
+        "type": "button",
+        "aria-label": "Create new project"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed [&_svg]:shrink-0 select-none text-fg-secondary hover:text-fg-primary hover:bg-button-ghost-hover disabled:hover:text-fg-secondary disabled:hover:bg-transparent [&_svg]:hover:text-fg-primary h-6 w-6 ms-auto opacity-0 group-hover/menu-item:opacity-100 transition-opacity duration-100 rounded-lg",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed [&amp;_svg]:shrink-0 select-none text-fg-secondar"
+    },
+    {
+      "tag": "DIV",
+      "text": "History",
+      "attrs": {
+        "data-sidebar": "group",
+        "class": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200"
+      },
+      "className": "relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div data-sidebar=\"group\" class=\"relative flex w-full min-w-0 flex-col px-1.5 py-[2px] shrink-0 transition-[width,transform,opacity] duration-200\"><ul data-sidebar=\"menu\" class=\"flex w-full min-w-0 flex-col cursor-default gap-px\"><li data-sidebar=\"menu-item\" class=\"group/menu-item whitespace-nowrap "
+    },
+    {
+      "tag": "DIV",
+      "text": "History",
+      "attrs": {
+        "role": "button",
+        "tabindex": "0",
+        "aria-label": "History",
+        "class": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row justify-start gap-1 bg-surface-base text-primary text-sm rounded-xl group/sidebar-item transition-colors p-[0.375rem] focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent",
+        "data-sidebar": "menu-button",
+        "data-active": "false"
+      },
+      "className": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&>span:last-child]:truncate [&>svg]:shrink-0 hover:text-primary text-sm h-[36px] border-transparent hover:bg-button-ghost-hover data-[state=open]:hover:bg-button-ghost-hover active:bg-button-ghost-active data-[active=true]:bg-button-ghost-active aria-expanded:bg-button-ghost-hover w-full flex flex-row justify-start gap-1 bg-surface-base text-primary text-sm rounded-xl group/sidebar-item transition-colors p-[0.375rem] focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 select-none border-transparent",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div role=\"button\" tabindex=\"0\" aria-label=\"History\" class=\"peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 [&amp;&gt;s"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "data-slot": "button",
+        "class": "items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-secondary hover:bg-button-ghost-hover hover:text-fg-primary disabled:hover:bg-transparent border border-transparent rounded-full overflow-hidden h-10 w-10 flex p-1",
+        "type": "button",
+        "id": "radix-_r_1u_",
+        "aria-haspopup": "menu",
+        "aria-expanded": "false",
+        "data-state": "closed"
+      },
+      "className": "items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-secondary hover:bg-button-ghost-hover hover:text-fg-primary disabled:hover:bg-transparent border border-transparent rounded-full overflow-hidden h-10 w-10 flex p-1",
+      "id": "radix-_r_1u_",
+      "visible": true,
+      "outerHTML": "<button data-slot=\"button\" class=\"items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "attrs": {
+        "class": "relative flex shrink-0 overflow-hidden rounded-full border border-border hover:opacity-75 transition-[opacity,width,height] duration-150 w-8 h-8"
+      },
+      "className": "relative flex shrink-0 overflow-hidden rounded-full border border-border hover:opacity-75 transition-[opacity,width,height] duration-150 w-8 h-8",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<span class=\"relative flex shrink-0 overflow-hidden rounded-full border border-border hover:opacity-75 transition-[opacity,width,height] duration-150 w-8 h-8\"><img class=\"aspect-square h-full w-full\" alt=\"pfp\" src=\"https://assets.grok.com/users/4f802d0c-897f-45fe-b9b8-c0ad5de8a5b2/Ce3ENRH18ALzv6W3-p"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Toggle Sidebar",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-secondary hover:text-fg-primary hover:bg-button-ghost-hover disabled:hover:text-fg-secondary disabled:hover:bg-transparent [&_svg]:hover:text-fg-primary h-10 w-10 rounded-full absolute end-2 bottom-3",
+        "type": "button",
+        "data-sidebar": "trigger"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-secondary hover:text-fg-primary hover:bg-button-ghost-hover disabled:hover:text-fg-secondary disabled:hover:bg-transparent [&_svg]:hover:text-fg-primary h-10 w-10 rounded-full absolute end-2 bottom-3",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "attrs": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "18",
+        "height": "18",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "stroke": "currentColor",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "class": "lucide lucide-chevrons-right rotate-180 transition-transform duration-200"
+      },
+      "className": {},
+      "id": "",
+      "visible": true,
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-chevrons-right rotate-180 transition-transform duration-200\"><path d=\"m6 17 5-5-5-5\"></path><path "
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Upload image",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none border border-border-l2 text-fg-primary hover:bg-button-ghost-hover disabled:hover:bg-transparent h-10 px-4 py-2 rounded-full",
+        "type": "button",
+        "aria-label": "Upload image",
+        "data-state": "closed"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none border border-border-l2 text-fg-primary hover:bg-button-ghost-hover disabled:hover:bg-transparent h-10 px-4 py-2 rounded-full",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/d8bc75d6-7f7f-4bff-8533-afc3c4b92fe7_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 483px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/d8bc75d6-7f7f-4bff-8533-afc3c4b92fe7_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 483px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/a00e034e-9ea9-45cc-905f-60bd3c92a369_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 483px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/a00e034e-9ea9-45cc-905f-60bd3c92a369_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 483px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/b1a1baf4-167c-4c23-903b-184954cc4736_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 483px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/b1a1baf4-167c-4c23-903b-184954cc4736_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 483px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/ad981097-bb37-4d5d-9072-2b20d4251df7_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 486px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/ad981097-bb37-4d5d-9072-2b20d4251df7_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 486px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/dd494361-6839-4951-a84d-14c90df30ba7_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 483px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/dd494361-6839-4951-a84d-14c90df30ba7_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 483px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/41b7c090-be69-43b7-92a2-fa10e588cee3_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 180px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/41b7c090-be69-43b7-92a2-fa10e588cee3_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 180px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/0d83d5f4-f027-4461-bd4d-711befc65285_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 483px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/0d83d5f4-f027-4461-bd4d-711befc65285_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 483px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/c7df768f-4be4-4a65-8869-439a39d55b8c_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 219px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/c7df768f-4be4-4a65-8869-439a39d55b8c_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 219px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/c2f580b7-93ee-4b82-b68e-ded30bb23250_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 483px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/c2f580b7-93ee-4b82-b68e-ded30bb23250_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 483px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/1fe50872-e91c-4500-a992-61e6359a5142_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 483px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/1fe50872-e91c-4500-a992-61e6359a5142_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 483px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/47d60500-646d-4c72-80d2-74dfebe64ca4_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 220px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/47d60500-646d-4c72-80d2-74dfebe64ca4_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 220px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/19a52e15-e11c-41a2-89ae-6a7949390ff3_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 589px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/19a52e15-e11c-41a2-89ae-6a7949390ff3_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 589px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/46eb54ab-5c9e-4eb7-b06d-764307949ac7_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 483px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/46eb54ab-5c9e-4eb7-b06d-764307949ac7_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 483px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto"
+      },
+      "className": "relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"relative group/media-post-masonry-card cursor-pointer hover:scale-[1.02] transition-transform duration-300 pointer-events-auto\"><div class=\"\"><img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/"
+    },
+    {
+      "tag": "IMG",
+      "text": "",
+      "attrs": {
+        "class": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+        "alt": "Generated image",
+        "src": "https://imagine-public.x.ai/imagine-public/share-videos/e3458cbb-ad97-4dcc-82df-03f9cdc686c0_thumbnail.jpg?cache=1",
+        "style": "width: 326px; height: 483px;"
+      },
+      "className": "opacity-1 transition-opacity duration-500 ease-out rounded-2xl",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<img class=\"opacity-1 transition-opacity duration-500 ease-out rounded-2xl\" alt=\"Generated image\" src=\"https://imagine-public.x.ai/imagine-public/share-videos/e3458cbb-ad97-4dcc-82df-03f9cdc686c0_thumbnail.jpg?cache=1\" style=\"width: 326px; height: 483px;\">"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+        "type": "button",
+        "aria-label": "Save"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-full overflow-hidden h-10 w-10 p-2 bg-black/25 hover:bg-white/10 border border-white/15 border-opacity-10 group-hover/media-post-masonry-card:opacity-100 opacity-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-xl px-4 py-2 h-full flex items-start",
+        "type": "button",
+        "aria-label": "Favorites",
+        "data-state": "closed"
+      },
+      "className": "justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none rounded-xl px-4 py-2 h-full flex items-start",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<button class=\"justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink-0 select-none rounded-xl"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "absolute top-0 left-0 transition-transform duration-[300ms] ease-out",
+        "style": "width: 50px; height: 50px; transform: rotate(-9deg) translateX(-3px) scale(1);"
+      },
+      "className": "absolute top-0 left-0 transition-transform duration-[300ms] ease-out",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"absolute top-0 left-0 transition-transform duration-[300ms] ease-out\" style=\"width: 50px; height: 50px; transform: rotate(-9deg) translateX(-3px) scale(1);\"><img alt=\"78e83407-fddb-4e5f-a328-8ab96d9c526a\" class=\"w-full h-full object-cover rounded-xl\" src=\"https://assets.grok.com/users/4f"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "absolute top-0 left-0 transition-transform duration-[300ms] ease-out",
+        "style": "width: 50px; height: 50px; transform: rotate(3deg) translateX(0px) scale(1);"
+      },
+      "className": "absolute top-0 left-0 transition-transform duration-[300ms] ease-out",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"absolute top-0 left-0 transition-transform duration-[300ms] ease-out\" style=\"width: 50px; height: 50px; transform: rotate(3deg) translateX(0px) scale(1);\"><img alt=\"70262e35-2a20-435b-9fb4-c4a130b3f59d\" class=\"w-full h-full object-cover rounded-xl\" src=\"https://assets.grok.com/users/4f80"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "absolute top-0 left-0 transition-transform duration-[300ms] ease-out",
+        "style": "width: 50px; height: 50px; transform: rotate(15deg) translateX(3px) scale(1);"
+      },
+      "className": "absolute top-0 left-0 transition-transform duration-[300ms] ease-out",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"absolute top-0 left-0 transition-transform duration-[300ms] ease-out\" style=\"width: 50px; height: 50px; transform: rotate(15deg) translateX(3px) scale(1);\"><img alt=\"f41df64e-d07c-4de5-b932-087e0da02569\" class=\"w-full h-full object-cover rounded-xl border-2 border-white\" src=\"https://ima"
+    },
+    {
+      "tag": "DIV",
+      "text": "Image",
+      "attrs": {
+        "class": "query-bar group z-20 relative w-full overflow-hidden @container/input pb-0 bg-surface-l1 ring-1 ring-inset ring-border-l1 focus-within:ring-1 hover:ring-border-l1 focus-within:ring-border-l1 hover:focus-within:ring-border-l1 transition-[border-radius] duration-200 ease-in-out max-w-breakout rounded-t-[var(--border-t-radius)] rounded-b-[var(--border-b-radius)] shadow-sm shadow-black/5",
+        "style": "transition-property: background-color, box-shadow, border-color; transition-duration: 100ms; transition-timing-function: ease-in-out; --border-t-radius: 10.00rem; --border-b-radius: 10.00rem;"
+      },
+      "className": "query-bar group z-20 relative w-full overflow-hidden @container/input pb-0 bg-surface-l1 ring-1 ring-inset ring-border-l1 focus-within:ring-1 hover:ring-border-l1 focus-within:ring-border-l1 hover:focus-within:ring-border-l1 transition-[border-radius] duration-200 ease-in-out max-w-breakout rounded-t-[var(--border-t-radius)] rounded-b-[var(--border-b-radius)] shadow-sm shadow-black/5",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"query-bar group z-20 relative w-full overflow-hidden @container/input pb-0 bg-surface-l1 ring-1 ring-inset ring-border-l1 focus-within:ring-1 hover:ring-border-l1 focus-within:ring-border-l1 hover:focus-within:ring-border-l1 transition-[border-radius] duration-200 ease-in-out max-w-break"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "w-full flex-row gap-2 mt-3 px-1 whitespace-nowrap hidden flex-wrap will-change-[mask-image] @sm:[mask-image:none] [mask-image:linear-gradient(to_right,transparent_0,black_0px,black_calc(100%_-_40px),transparent_100%)]",
+        "style": "opacity: 1; transform: none;"
+      },
+      "className": "w-full flex-row gap-2 mt-3 px-1 whitespace-nowrap hidden flex-wrap will-change-[mask-image] @sm:[mask-image:none] [mask-image:linear-gradient(to_right,transparent_0,black_0px,black_calc(100%_-_40px),transparent_100%)]",
+      "id": "",
+      "visible": false,
+      "outerHTML": "<div class=\"w-full flex-row gap-2 mt-3 px-1 whitespace-nowrap hidden flex-wrap will-change-[mask-image] @sm:[mask-image:none] [mask-image:linear-gradient(to_right,transparent_0,black_0px,black_calc(100%_-_40px),transparent_100%)]\" style=\"opacity: 1; transform: none;\"></div>"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-primary hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 w-10 rounded-full group/attach-button",
+        "type": "button",
+        "aria-label": "Attach",
+        "tabindex": "0",
+        "id": "radix-_r_2b_",
+        "aria-haspopup": "menu",
+        "aria-expanded": "false",
+        "data-state": "closed"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none text-fg-primary hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 w-10 rounded-full group/attach-button",
+      "id": "radix-_r_2b_",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink"
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "attrs": {
+        "width": "18",
+        "height": "18",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "stroke-[2] text-primary transition-colors duration-100"
+      },
+      "className": {},
+      "id": "",
+      "visible": true,
+      "outerHTML": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"stroke-[2] text-primary transition-colors duration-100\"><path d=\"M10 9V15C10 16.1046 10.8954 17 12 17V17C13.1046 17 14 16.1046 14 15V7C14 4.79086 12.2091 3 10 3V3C7.79086 3 6 4.79086 6 7V15C6 18.313"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Image",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 py-1.5 text-sm rounded-full text-primary px-3.5 focus:outline-none aria-expanded:bg-button-ghost-hover",
+        "type": "button",
+        "id": "model-select-trigger",
+        "aria-label": "Model select",
+        "aria-haspopup": "menu",
+        "aria-expanded": "false",
+        "data-state": "closed"
+      },
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 py-1.5 text-sm rounded-full text-primary px-3.5 focus:outline-none aria-expanded:bg-button-ghost-hover",
+      "id": "model-select-trigger",
+      "visible": true,
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink-0 select-none hover:bg-b"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "h-10 relative aspect-square flex items-center justify-center gap-0.5 rounded-full ring-1 ring-inset duration-100 text-fg-secondary ring-border-l1 hover:bg-surface-l3 hover:text-fg-primary"
+      },
+      "className": "h-10 relative aspect-square flex items-center justify-center gap-0.5 rounded-full ring-1 ring-inset duration-100 text-fg-secondary ring-border-l1 hover:bg-surface-l3 hover:text-fg-primary",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"h-10 relative aspect-square flex items-center justify-center gap-0.5 rounded-full ring-1 ring-inset duration-100 text-fg-secondary ring-border-l1 hover:bg-surface-l3 hover:text-fg-primary\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stro"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "attrs": {
+        "class": "h-10 relative aspect-square flex flex-col items-center justify-center rounded-full ring-inset before:absolute before:inset-0 before:rounded-full before:bg-button-filled before:ring-0 before:transition-[clip-path,background-color] duration-100 bg-warm-gray-100 dark:bg-gray-600 text-fg-secondary before:[clip-path:circle(0%_at_50%_50%)] ring-0"
+      },
+      "className": "h-10 relative aspect-square flex flex-col items-center justify-center rounded-full ring-inset before:absolute before:inset-0 before:rounded-full before:bg-button-filled before:ring-0 before:transition-[clip-path,background-color] duration-100 bg-warm-gray-100 dark:bg-gray-600 text-fg-secondary before:[clip-path:circle(0%_at_50%_50%)] ring-0",
+      "id": "",
+      "visible": true,
+      "outerHTML": "<div class=\"h-10 relative aspect-square flex flex-col items-center justify-center rounded-full ring-inset before:absolute before:inset-0 before:rounded-full before:bg-button-filled before:ring-0 before:transition-[clip-path,background-color] duration-100 bg-warm-gray-100 dark:bg-gray-600 text-fg-sec"
+    }
+  ]
+}

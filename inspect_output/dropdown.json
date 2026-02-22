@@ -1,0 +1,688 @@
+{
+  "portals": [
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Video Duration\n\n6s\n10s\n\nVideo Resolution\n\n480p\n720p\n\nAspect Ratio\n\nVideo\nGenerate a video\nImage\nGene",
+      "attrs": {
+        "data-radix-popper-content-wrapper": "",
+        "dir": "ltr",
+        "style": "position: fixed; left: 0px; top: 0px; transform: translate(949px, 471px); min-width: max-content; --radix-popper-transform-origin: 50% 360px; z-index: auto; --radix-popper-available-width: 1248px; --radix-popper-available-height: 815px; --radix-popper-anchor-width: 120.96875px; --radix-popper-anchor-height: 40px;"
+      },
+      "outerHTML": "<div data-radix-popper-content-wrapper=\"\" dir=\"ltr\" style=\"position: fixed; left: 0px; top: 0px; transform: translate(949px, 471px); min-width: max-content; --radix-popper-transform-origin: 50% 360px; z-index: auto; --radix-popper-available-width: 1248px; --radix-popper-available-height: 815px; --radix-popper-anchor-width: 120.96875px; --radix-popper-anchor-height: 40px;\"><div data-side=\"top\" data",
+      "visible": false,
+      "rect": {
+        "x": 949,
+        "y": 471,
+        "width": 212.5,
+        "height": 360,
+        "top": 471,
+        "right": 1161.5,
+        "bottom": 831,
+        "left": 949
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "menu",
+      "text": "Video Duration\n\n6s\n10s\n\nVideo Resolution\n\n480p\n720p\n\nAspect Ratio\n\nVideo\nGenerate a video\nImage\nGene",
+      "attrs": {
+        "data-side": "top",
+        "data-align": "center",
+        "role": "menu",
+        "aria-orientation": "vertical",
+        "data-state": "open",
+        "data-radix-menu-content": "",
+        "dir": "ltr",
+        "id": "radix-_r_3q_",
+        "aria-labelledby": "radix-_r_3p_",
+        "class": "overflow-auto max-h-[--radix-dropdown-menu-content-available-height] rounded-2xl bg-popover border border-border-l1 text-primary p-1 shadow-md shadow-black/5 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 origin-[var(--radix-dropdown-menu-content-transform-origin)]",
+        "tabindex": "-1",
+        "data-orientation": "vertical",
+        "style": "outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); --radix-dropdown-menu-content-available-width: var(--radix-popper-available-width); --radix-dropdown-menu-content-available-height: var(--radix-popper-available-height); --radix-dropdown-menu-trigger-width: var(--radix-popper-anchor-width); --radix-dropdown-menu-trigger-height: var(--radix-popper-anchor-height); pointer-events: auto;"
+      },
+      "outerHTML": "<div data-side=\"top\" data-align=\"center\" role=\"menu\" aria-orientation=\"vertical\" data-state=\"open\" data-radix-menu-content=\"\" dir=\"ltr\" id=\"radix-_r_3q_\" aria-labelledby=\"radix-_r_3p_\" class=\"overflow-auto max-h-[--radix-dropdown-menu-content-available-height] rounded-2xl bg-popover border border-border-l1 text-primary p-1 shadow-md shadow-black/5 data-[state=open]:animate-in data-[state=closed]:a",
+      "visible": true,
+      "rect": {
+        "x": 949,
+        "y": 471,
+        "width": 212.5,
+        "height": 360,
+        "top": 471,
+        "right": 1161.5,
+        "bottom": 831,
+        "left": 949
+      }
+    }
+  ],
+  "menuItems": [
+    {
+      "tag": "DIV",
+      "role": "menuitem",
+      "text": "Video Duration\n\n6s\n10s",
+      "attrs": {
+        "class": "flex flex-col gap-1 p-2 ",
+        "role": "menuitem"
+      },
+      "outerHTML": "<div class=\"flex flex-col gap-1 p-2 \" role=\"menuitem\"><p class=\"text-sm font-semibold text-primary\">Video Duration</p><div class=\"flex flex-row gap-0\"><button data-slot=\"button\" class=\"inline-flex items-center justify-center whitespace-nowrap cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors dura",
+      "visible": true,
+      "rect": {
+        "x": 954,
+        "y": 476,
+        "width": 202.5,
+        "height": 73,
+        "top": 476,
+        "right": 1156.5,
+        "bottom": 549,
+        "left": 954
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "menuitem",
+      "text": "Video Resolution\n\n480p\n720p",
+      "attrs": {
+        "class": "flex flex-col gap-1 p-2 ",
+        "role": "menuitem"
+      },
+      "outerHTML": "<div class=\"flex flex-col gap-1 p-2 \" role=\"menuitem\"><p class=\"text-sm font-semibold text-primary\">Video Resolution</p><div class=\"flex flex-row gap-0\"><button data-slot=\"button\" class=\"inline-flex items-center justify-center whitespace-nowrap cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors du",
+      "visible": true,
+      "rect": {
+        "x": 954,
+        "y": 558,
+        "width": 202.5,
+        "height": 73,
+        "top": 558,
+        "right": 1156.5,
+        "bottom": 631,
+        "left": 954
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "menuitem",
+      "text": "Aspect Ratio",
+      "attrs": {
+        "class": "flex flex-col gap-1 p-2 ",
+        "role": "menuitem"
+      },
+      "outerHTML": "<div class=\"flex flex-col gap-1 p-2 \" role=\"menuitem\"><p class=\"text-sm font-semibold text-primary\">Aspect Ratio</p><div class=\"flex flex-row gap-0\"><button class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transi",
+      "visible": true,
+      "rect": {
+        "x": 954,
+        "y": 631,
+        "width": 202.5,
+        "height": 73,
+        "top": 631,
+        "right": 1156.5,
+        "bottom": 704,
+        "left": 954
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "menuitem",
+      "text": "Video\nGenerate a video",
+      "attrs": {
+        "role": "menuitem",
+        "class": "relative flex select-none items-center cursor-pointer px-3 py-2 rounded-xl text-sm outline-none focus:bg-button-ghost-hover aria-disabled:opacity-50 aria-disabled:cursor-not-allowed",
+        "tabindex": "-1",
+        "data-orientation": "vertical",
+        "data-radix-collection-item": ""
+      },
+      "outerHTML": "<div role=\"menuitem\" class=\"relative flex select-none items-center cursor-pointer px-3 py-2 rounded-xl text-sm outline-none focus:bg-button-ghost-hover aria-disabled:opacity-50 aria-disabled:cursor-not-allowed\" tabindex=\"-1\" data-orientation=\"vertical\" data-radix-collection-item=\"\"><div class=\"flex flex-row items-center gap-2\"><div class=\"flex items-center justify-center size-[18px] overflow-hidde",
+      "visible": true,
+      "rect": {
+        "x": 954,
+        "y": 713,
+        "width": 202.5,
+        "height": 56.5,
+        "top": 713,
+        "right": 1156.5,
+        "bottom": 769.5,
+        "left": 954
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "menuitem",
+      "text": "Image\nGenerate multiple images",
+      "attrs": {
+        "role": "menuitem",
+        "class": "relative flex select-none items-center cursor-pointer px-3 py-2 rounded-xl text-sm outline-none focus:bg-button-ghost-hover aria-disabled:opacity-50 aria-disabled:cursor-not-allowed",
+        "tabindex": "-1",
+        "data-orientation": "vertical",
+        "data-radix-collection-item": ""
+      },
+      "outerHTML": "<div role=\"menuitem\" class=\"relative flex select-none items-center cursor-pointer px-3 py-2 rounded-xl text-sm outline-none focus:bg-button-ghost-hover aria-disabled:opacity-50 aria-disabled:cursor-not-allowed\" tabindex=\"-1\" data-orientation=\"vertical\" data-radix-collection-item=\"\"><div class=\"flex flex-row items-center gap-2\"><div class=\"flex items-center justify-center size-[18px] overflow-hidde",
+      "visible": true,
+      "rect": {
+        "x": 954,
+        "y": 769.5,
+        "width": 202.5,
+        "height": 56.5,
+        "top": 769.5,
+        "right": 1156.5,
+        "bottom": 826,
+        "left": 954
+      }
+    }
+  ],
+  "videoImgItems": [
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "absolute left-0 bottom-0 w-full p-3"
+      },
+      "outerHTML": "<div class=\"absolute left-0 bottom-0 w-full p-3\"><div class=\"flex flex-row items-center gap-2 justify-center\"><div class=\"w-gutter\"></div><button class=\"justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp",
+      "visible": true,
+      "rect": {
+        "x": 257,
+        "y": 810,
+        "width": 1023,
+        "height": 90,
+        "top": 810,
+        "right": 1280,
+        "bottom": 900,
+        "left": 257
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "flex flex-row items-center gap-2 justify-center"
+      },
+      "outerHTML": "<div class=\"flex flex-row items-center gap-2 justify-center\"><div class=\"w-gutter\"></div><button class=\"justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink-0 select-none rounded-xl px-4 py-2 ",
+      "visible": true,
+      "rect": {
+        "x": 269,
+        "y": 822,
+        "width": 999,
+        "height": 66,
+        "top": 822,
+        "right": 1268,
+        "bottom": 888,
+        "left": 269
+      }
+    },
+    {
+      "tag": "FORM",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "w-full text-base flex flex-col gap-2 items-center justify-center relative z-10 max-w-breakout"
+      },
+      "outerHTML": "<form class=\"w-full text-base flex flex-col gap-2 items-center justify-center relative z-10 max-w-breakout\"><div class=\"flex flex-col gap-0 justify-center w-full relative items-center\"><input class=\"hidden\" multiple=\"\" accept=\"image/*\" type=\"file\" name=\"files\" style=\"\"><div class=\"query-bar group z-20 relative w-full overflow-hidden @container/input pb-0 bg-surface-l1 ring-1 ring-inset ring-border",
+      "visible": true,
+      "rect": {
+        "x": 413.5,
+        "y": 825,
+        "width": 800,
+        "height": 60,
+        "top": 825,
+        "right": 1213.5,
+        "bottom": 885,
+        "left": 413.5
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "flex flex-col gap-0 justify-center w-full relative items-center"
+      },
+      "outerHTML": "<div class=\"flex flex-col gap-0 justify-center w-full relative items-center\"><input class=\"hidden\" multiple=\"\" accept=\"image/*\" type=\"file\" name=\"files\" style=\"\"><div class=\"query-bar group z-20 relative w-full overflow-hidden @container/input pb-0 bg-surface-l1 ring-1 ring-inset ring-border-l1 focus-within:ring-1 hover:ring-border-l1 focus-within:ring-border-l1 hover:focus-within:ring-border-l1 t",
+      "visible": true,
+      "rect": {
+        "x": 413.5,
+        "y": 825,
+        "width": 800,
+        "height": 60,
+        "top": 825,
+        "right": 1213.5,
+        "bottom": 885,
+        "left": 413.5
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "query-bar group z-20 relative w-full overflow-hidden @container/input pb-0 bg-surface-l1 ring-1 ring-inset ring-border-l1 focus-within:ring-1 hover:ring-border-l1 focus-within:ring-border-l1 hover:focus-within:ring-border-l1 transition-[border-radius] duration-200 ease-in-out max-w-breakout rounded-t-[var(--border-t-radius)] rounded-b-[var(--border-b-radius)] shadow-sm shadow-black/5",
+        "style": "transition-property: background-color, box-shadow, border-color; transition-duration: 100ms; transition-timing-function: ease-in-out; --border-t-radius: 10.00rem; --border-b-radius: 10.00rem;"
+      },
+      "outerHTML": "<div class=\"query-bar group z-20 relative w-full overflow-hidden @container/input pb-0 bg-surface-l1 ring-1 ring-inset ring-border-l1 focus-within:ring-1 hover:ring-border-l1 focus-within:ring-border-l1 hover:focus-within:ring-border-l1 transition-[border-radius] duration-200 ease-in-out max-w-breakout rounded-t-[var(--border-t-radius)] rounded-b-[var(--border-b-radius)] shadow-sm shadow-black/5\" ",
+      "visible": true,
+      "rect": {
+        "x": 413.5,
+        "y": 825,
+        "width": 800,
+        "height": 60,
+        "top": 825,
+        "right": 1213.5,
+        "bottom": 885,
+        "left": 413.5
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "ps-11 pe-32",
+        "style": "padding-inline-end: 213.969px;"
+      },
+      "outerHTML": "<div class=\"ps-11 pe-32\" style=\"padding-inline-end: 213.969px;\"><div class=\"relative z-10\"><div class=\"relative min-h-[60px]\"><div dir=\"ltr\"><div contenteditable=\"true\" translate=\"no\" class=\"tiptap ProseMirror w-full px-2 bg-transparent focus:outline-none text-primary align-bottom max-h-[400px] overflow-y-auto !max-w-none prose [&amp;_ul&gt;li&gt;p]:my-0 [&amp;_ol&gt;li&gt;p]:my-0 [&amp;_li&gt;ol]",
+      "visible": true,
+      "rect": {
+        "x": 413.5,
+        "y": 825,
+        "width": 800,
+        "height": 60,
+        "top": 825,
+        "right": 1213.5,
+        "bottom": 885,
+        "left": 413.5
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "flex absolute inset-x-0 bottom-0 border-2 border-transparent max-w-full p-2 @[480px]/input:p-2"
+      },
+      "outerHTML": "<div class=\"flex absolute inset-x-0 bottom-0 border-2 border-transparent max-w-full p-2 @[480px]/input:p-2\"><div class=\"grow flex items-center gap-1.5\"><div class=\"flex items-center\"><button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opaci",
+      "visible": true,
+      "rect": {
+        "x": 413.5,
+        "y": 825,
+        "width": 800,
+        "height": 60,
+        "top": 825,
+        "right": 1213.5,
+        "bottom": 885,
+        "left": 413.5
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "grow flex items-center gap-1.5"
+      },
+      "outerHTML": "<div class=\"grow flex items-center gap-1.5\"><div class=\"flex items-center\"><button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink-0 select-none text-fg-pr",
+      "visible": true,
+      "rect": {
+        "x": 423.5,
+        "y": 835,
+        "width": 780,
+        "height": 40,
+        "top": 835,
+        "right": 1203.5,
+        "bottom": 875,
+        "left": 423.5
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "ms-auto flex flex-row items-end gap-1"
+      },
+      "outerHTML": "<div class=\"ms-auto flex flex-row items-end gap-1\"><div class=\"z-20\"><button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink-0 select-none hover:bg-button-ghost-hover disabled:hove",
+      "visible": true,
+      "rect": {
+        "x": 994.53125,
+        "y": 835,
+        "width": 208.96875,
+        "height": 40,
+        "top": 835,
+        "right": 1203.5,
+        "bottom": 875,
+        "left": 994.53125
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "z-20"
+      },
+      "outerHTML": "<div class=\"z-20\"><button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink-0 select-none hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 py-",
+      "visible": true,
+      "rect": {
+        "x": 994.53125,
+        "y": 835,
+        "width": 120.96875,
+        "height": 40,
+        "top": 835,
+        "right": 1115.5,
+        "bottom": 875,
+        "left": 994.53125
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&_svg]:shrink-0 select-none hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 py-1.5 text-sm rounded-full text-primary px-3.5 focus:outline-none aria-expanded:bg-button-ghost-hover",
+        "type": "button",
+        "id": "model-select-trigger",
+        "aria-label": "Model select",
+        "aria-haspopup": "menu",
+        "aria-expanded": "true",
+        "data-state": "closed",
+        "aria-controls": "radix-_r_3q_"
+      },
+      "outerHTML": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-100 [&amp;_svg]:shrink-0 select-none hover:bg-button-ghost-hover disabled:hover:bg-transparent border border-transparent h-10 py-1.5 text-sm rounde",
+      "visible": true,
+      "rect": {
+        "x": 994.53125,
+        "y": 835,
+        "width": 120.96875,
+        "height": 40,
+        "top": 835,
+        "right": 1115.5,
+        "bottom": 875,
+        "left": 994.53125
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "flex flex-row items-center gap-2"
+      },
+      "outerHTML": "<div class=\"flex flex-row items-center gap-2\"><div class=\"flex items-center justify-center size-[18px] overflow-hidden shrink-0\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"stroke-[2] \"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14.0996 2.5C15.2032 2.5 16.0914 2.49903 16.8086 2.55762C17.5373 2.61716 18.1773 2.74327 18.7695 3.04492C19",
+      "visible": true,
+      "rect": {
+        "x": 1009.53125,
+        "y": 844.5,
+        "width": 66.96875,
+        "height": 21,
+        "top": 844.5,
+        "right": 1076.5,
+        "bottom": 865.5,
+        "left": 1009.53125
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "style": "overflow: hidden; width: auto; opacity: 1; flex-grow: 0;"
+      },
+      "outerHTML": "<div style=\"overflow: hidden; width: auto; opacity: 1; flex-grow: 0;\"><div class=\"flex flex-col items-start\"><span class=\"font-semibold text-sm shrink-0 line-clamp-1\">Image</span><span class=\"text-xs text-secondary line-clamp-1\"></span></div></div>",
+      "visible": true,
+      "rect": {
+        "x": 1035.53125,
+        "y": 844.5,
+        "width": 40.96875,
+        "height": 21,
+        "top": 844.5,
+        "right": 1076.5,
+        "bottom": 865.5,
+        "left": 1035.53125
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "flex flex-col items-start"
+      },
+      "outerHTML": "<div class=\"flex flex-col items-start\"><span class=\"font-semibold text-sm shrink-0 line-clamp-1\">Image</span><span class=\"text-xs text-secondary line-clamp-1\"></span></div>",
+      "visible": true,
+      "rect": {
+        "x": 1035.53125,
+        "y": 844.5,
+        "width": 40.96875,
+        "height": 21,
+        "top": 844.5,
+        "right": 1076.5,
+        "bottom": 865.5,
+        "left": 1035.53125
+      }
+    },
+    {
+      "tag": "SPAN",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "font-semibold text-sm shrink-0 line-clamp-1"
+      },
+      "outerHTML": "<span class=\"font-semibold text-sm shrink-0 line-clamp-1\">Image</span>",
+      "visible": true,
+      "rect": {
+        "x": 1035.53125,
+        "y": 844.5,
+        "width": 40.96875,
+        "height": 21,
+        "top": 844.5,
+        "right": 1076.5,
+        "bottom": 865.5,
+        "left": 1035.53125
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "menuitem",
+      "text": "Video Duration\n\n6s\n10s",
+      "attrs": {
+        "class": "flex flex-col gap-1 p-2 ",
+        "role": "menuitem"
+      },
+      "outerHTML": "<div class=\"flex flex-col gap-1 p-2 \" role=\"menuitem\"><p class=\"text-sm font-semibold text-primary\">Video Duration</p><div class=\"flex flex-row gap-0\"><button data-slot=\"button\" class=\"inline-flex items-center justify-center whitespace-nowrap cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors dura",
+      "visible": true,
+      "rect": {
+        "x": 954,
+        "y": 476,
+        "width": 202.5,
+        "height": 73,
+        "top": 476,
+        "right": 1156.5,
+        "bottom": 549,
+        "left": 954
+      }
+    },
+    {
+      "tag": "P",
+      "role": null,
+      "text": "Video Duration",
+      "attrs": {
+        "class": "text-sm font-semibold text-primary"
+      },
+      "outerHTML": "<p class=\"text-sm font-semibold text-primary\">Video Duration</p>",
+      "visible": true,
+      "rect": {
+        "x": 962,
+        "y": 484,
+        "width": 186.5,
+        "height": 21,
+        "top": 484,
+        "right": 1148.5,
+        "bottom": 505,
+        "left": 962
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "menuitem",
+      "text": "Video Resolution\n\n480p\n720p",
+      "attrs": {
+        "class": "flex flex-col gap-1 p-2 ",
+        "role": "menuitem"
+      },
+      "outerHTML": "<div class=\"flex flex-col gap-1 p-2 \" role=\"menuitem\"><p class=\"text-sm font-semibold text-primary\">Video Resolution</p><div class=\"flex flex-row gap-0\"><button data-slot=\"button\" class=\"inline-flex items-center justify-center whitespace-nowrap cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-60 disabled:cursor-not-allowed transition-colors du",
+      "visible": true,
+      "rect": {
+        "x": 954,
+        "y": 558,
+        "width": 202.5,
+        "height": 73,
+        "top": 558,
+        "right": 1156.5,
+        "bottom": 631,
+        "left": 954
+      }
+    },
+    {
+      "tag": "P",
+      "role": null,
+      "text": "Video Resolution",
+      "attrs": {
+        "class": "text-sm font-semibold text-primary"
+      },
+      "outerHTML": "<p class=\"text-sm font-semibold text-primary\">Video Resolution</p>",
+      "visible": true,
+      "rect": {
+        "x": 962,
+        "y": 566,
+        "width": 186.5,
+        "height": 21,
+        "top": 566,
+        "right": 1148.5,
+        "bottom": 587,
+        "left": 962
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "menuitem",
+      "text": "Video\nGenerate a video",
+      "attrs": {
+        "role": "menuitem",
+        "class": "relative flex select-none items-center cursor-pointer px-3 py-2 rounded-xl text-sm outline-none focus:bg-button-ghost-hover aria-disabled:opacity-50 aria-disabled:cursor-not-allowed",
+        "tabindex": "-1",
+        "data-orientation": "vertical",
+        "data-radix-collection-item": ""
+      },
+      "outerHTML": "<div role=\"menuitem\" class=\"relative flex select-none items-center cursor-pointer px-3 py-2 rounded-xl text-sm outline-none focus:bg-button-ghost-hover aria-disabled:opacity-50 aria-disabled:cursor-not-allowed\" tabindex=\"-1\" data-orientation=\"vertical\" data-radix-collection-item=\"\"><div class=\"flex flex-row items-center gap-2\"><div class=\"flex items-center justify-center size-[18px] overflow-hidde",
+      "visible": true,
+      "rect": {
+        "x": 954,
+        "y": 713,
+        "width": 202.5,
+        "height": 56.5,
+        "top": 713,
+        "right": 1156.5,
+        "bottom": 769.5,
+        "left": 954
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Video\nGenerate a video",
+      "attrs": {
+        "class": "flex flex-row items-center gap-2"
+      },
+      "outerHTML": "<div class=\"flex flex-row items-center gap-2\"><div class=\"flex items-center justify-center size-[18px] overflow-hidden shrink-0\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"stroke-[2] \"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 4C14.4853 4 16.5 6.01472 16.5 8.5V15.5C16.5 17.9853 14.4853 20 12 20H6C3.51472 20 1.5 17.9853 1.5 15.5V",
+      "visible": true,
+      "rect": {
+        "x": 966,
+        "y": 721,
+        "width": 127.1875,
+        "height": 40.5,
+        "top": 721,
+        "right": 1093.1875,
+        "bottom": 761.5,
+        "left": 966
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Video\nGenerate a video",
+      "attrs": {
+        "style": "overflow: hidden; width: auto; opacity: 1; flex-grow: 0;"
+      },
+      "outerHTML": "<div style=\"overflow: hidden; width: auto; opacity: 1; flex-grow: 0;\"><div class=\"flex flex-col items-start\"><span class=\"font-semibold text-sm shrink-0 line-clamp-1\">Video</span><span class=\"text-xs text-secondary line-clamp-1\">Generate a video</span></div></div>",
+      "visible": true,
+      "rect": {
+        "x": 992,
+        "y": 721,
+        "width": 101.1875,
+        "height": 40.5,
+        "top": 721,
+        "right": 1093.1875,
+        "bottom": 761.5,
+        "left": 992
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": null,
+      "text": "Video\nGenerate a video",
+      "attrs": {
+        "class": "flex flex-col items-start"
+      },
+      "outerHTML": "<div class=\"flex flex-col items-start\"><span class=\"font-semibold text-sm shrink-0 line-clamp-1\">Video</span><span class=\"text-xs text-secondary line-clamp-1\">Generate a video</span></div>",
+      "visible": true,
+      "rect": {
+        "x": 992,
+        "y": 721,
+        "width": 101.1875,
+        "height": 40.5,
+        "top": 721,
+        "right": 1093.1875,
+        "bottom": 761.5,
+        "left": 992
+      }
+    },
+    {
+      "tag": "SPAN",
+      "role": null,
+      "text": "Video",
+      "attrs": {
+        "class": "font-semibold text-sm shrink-0 line-clamp-1"
+      },
+      "outerHTML": "<span class=\"font-semibold text-sm shrink-0 line-clamp-1\">Video</span>",
+      "visible": true,
+      "rect": {
+        "x": 992,
+        "y": 721,
+        "width": 39.0625,
+        "height": 21,
+        "top": 721,
+        "right": 1031.0625,
+        "bottom": 742,
+        "left": 992
+      }
+    },
+    {
+      "tag": "SPAN",
+      "role": null,
+      "text": "Image",
+      "attrs": {
+        "class": "font-semibold text-sm shrink-0 line-clamp-1"
+      },
+      "outerHTML": "<span class=\"font-semibold text-sm shrink-0 line-clamp-1\">Image</span>",
+      "visible": true,
+      "rect": {
+        "x": 992,
+        "y": 777.5,
+        "width": 40.96875,
+        "height": 21,
+        "top": 777.5,
+        "right": 1032.96875,
+        "bottom": 798.5,
+        "left": 992
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+credentials.json
+token_drive.json
+token_youtube.json
+browser_profile/
+output/
+__pycache__/
+*.pyc
+.env
