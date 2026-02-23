@@ -88,6 +88,8 @@ DEFAULT_CONFIG = {
     "youtube_privacy": "private",
     "youtube_description": "Generated with Grok Automation.",
     "youtube_tags": ["AI", "Grok", "automation"],
+    # Direct upload (skip local save)
+    "no_local_save": False,   # True = stream media bytes straight to Drive, nothing written locally
     "headless": False,
 }
 
@@ -154,6 +156,17 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--headless", action="store_true", help="Run browser in headless mode")
     parser.add_argument("--upload-drive", action="store_true", help="Upload outputs to Google Drive")
     parser.add_argument("--upload-youtube", action="store_true", help="Upload MP4s to YouTube")
+    parser.add_argument(
+        "--drive-folder",
+        type=str,
+        default=None,
+        help="Google Drive folder name to upload into (e.g. 'Grok-Feb2026'). Defaults to 'Grok-DD-MM-YYYY'.",
+    )
+    parser.add_argument(
+        "--no-local-save",
+        action="store_true",
+        help="Skip saving to disk — stream generated media directly to Google Drive (requires --upload-drive)",
+    )
     parser.add_argument(
         "--auth-drive",
         action="store_true",
@@ -233,6 +246,12 @@ def main():
         config["auto_upload_drive"] = True
     if args.upload_youtube:
         config["auto_upload_youtube"] = True
+    if args.no_local_save:
+        config["no_local_save"] = True
+        # no_local_save only works with Drive; auto-enable it
+        config["auto_upload_drive"] = True
+    if args.drive_folder:
+        config["drive_folder"] = args.drive_folder
 
     # ── Drive auth test ───────────────────────────────────────────────────
     if args.auth_drive:
@@ -257,7 +276,8 @@ def main():
     print_info(f"Mode          : {config['mode']}")
     print_info(f"Prompts       : {len(prompts)}")
     print_info(f"Aspect ratio  : {config['aspect_ratio']}")
-    print_info(f"Output folder : {config['output_folder']}")
+    print_info(f"Output folder : {'(skipped — direct Drive upload)' if config.get('no_local_save') else config['output_folder']}")
+    print_info(f"Drive upload  : {'direct (no local save)' if config.get('no_local_save') else config.get('auto_upload_drive', False)}")
     print_info(f"Headless      : {config['headless']}")
     print_info(f"Max retries   : {config['max_retries']}")
     console.print()
@@ -283,9 +303,17 @@ def main():
         # ── Collect downloaded files ───────────────────────────────────────
         all_files = [f for r in results for f in r.get("saved_files", [])]
 
-        # ── Uploads ───────────────────────────────────────────────────────
-        if all_files and (config.get("auto_upload_drive") or config.get("auto_upload_youtube")):
-            handle_uploads(all_files, config)
+        # ── End-of-batch uploads ───────────────────────────────────────────
+        # Drive: already uploaded per-prompt inside grok_ui (no_local_save or normal mode).
+        # YouTube: still batched here since it needs local files.
+        if not config.get("no_local_save") and all_files and config.get("auto_upload_youtube"):
+            print_section("YouTube Upload")
+            try:
+                from modules.youtube_upload import upload_to_youtube
+                upload_to_youtube(all_files, config)
+            except Exception as exc:
+                print_error(f"YouTube upload error: {exc}")
+
 
         # ── Summary ───────────────────────────────────────────────────────
         print_summary(results)

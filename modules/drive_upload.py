@@ -14,6 +14,7 @@ Config keys (all optional, with defaults shown):
   drive_parent_id     : null                   — existing parent folder ID to nest inside
 """
 
+import io
 import mimetypes
 import os
 from datetime import date
@@ -304,6 +305,136 @@ def upload_to_drive(file_paths: list[str], config: dict) -> list[dict]:
         f"[green]{uploaded} uploaded[/green]"
         + (f", [yellow]{failed} failed[/yellow]" if failed else "")
         + (f", [dim]{skipped} skipped[/dim]" if skipped else "")
+        + f" — folder: '{folder_name}'"
+    )
+
+    return results
+
+
+# ── In-memory upload (no local file required) ────────────────────────────────
+
+def _upload_single_bytes(
+    service,
+    filename: str,
+    data: bytes,
+    mime: str,
+    folder_id: str,
+    make_public: bool = False,
+) -> str | None:
+    """
+    Upload raw bytes straight to Drive using MediaIoBaseUpload.
+    Shows a live progress bar. Returns the webViewLink, or None on failure.
+    """
+    from googleapiclient.http import MediaIoBaseUpload
+
+    size_mb = len(data) / (1024 * 1024)
+    print_info(f"Uploading (memory): [bold]{filename}[/bold]  ({size_mb:.1f} MB, {mime})")
+
+    try:
+        buf = io.BytesIO(data)
+        media = MediaIoBaseUpload(
+            buf,
+            mimetype=mime,
+            resumable=True,
+            chunksize=_CHUNK_SIZE,
+        )
+        file_meta = {"name": filename, "parents": [folder_id]}
+
+        request = service.files().create(
+            body=file_meta,
+            media_body=media,
+            fields="id,name,webViewLink",
+        )
+
+        response = None
+        while response is None:
+            status, response = request.next_chunk()
+            if status:
+                pct = int(status.progress() * 100)
+                bar_filled = pct // 5
+                bar = "█" * bar_filled + "░" * (20 - bar_filled)
+                console.print(
+                    f"\r    [{bar}] {pct:3d}%", end="", highlight=False
+                )
+
+        console.print()
+
+        file_id = response.get("id", "")
+        link = response.get("webViewLink", "")
+
+        if make_public and file_id:
+            _make_public(service, file_id)
+            link = f"https://drive.google.com/file/d/{file_id}/view?usp=sharing"
+
+        print_success(f"  ✓ Uploaded (direct) → {link}")
+        return link
+
+    except Exception as exc:
+        console.print()
+        print_error(f"  ✗ In-memory upload failed for '{filename}': {exc}")
+        return None
+
+
+def upload_bytes_to_drive(
+    items: list[tuple[str, bytes]],
+    config: dict,
+) -> list[dict]:
+    """
+    Upload (filename, bytes) pairs directly to Google Drive — no local file needed.
+
+    Config keys used (same as upload_to_drive):
+      drive_folder      (str)  — folder name; defaults to \"Grok-DD-MM-YYYY\"
+      drive_parent_id   (str)  — parent folder ID to nest inside (optional)
+      drive_make_public (bool) — make uploaded files publicly readable; default False
+
+    Returns a list of {\"file\": filename, \"link\": url_or_\"upload_failed\"} dicts.
+    """
+    if not items:
+        print_warning("No in-memory items to upload.")
+        return []
+
+    folder_name: str = config.get(
+        "drive_folder",
+        f"Grok-{date.today().strftime('%d-%m-%Y')}",
+    )
+    parent_id: str | None = config.get("drive_parent_id") or None
+    make_public: bool = bool(config.get("drive_make_public", False))
+
+    print_info(f"Google Drive target folder (direct): '{folder_name}'")
+    if make_public:
+        print_info("Files will be made publicly readable (anyone with link).")
+
+    try:
+        service = _get_drive_service()
+    except FileNotFoundError as exc:
+        print_error(str(exc))
+        return []
+    except Exception as exc:
+        print_error(f"Drive authentication failed: {exc}")
+        return []
+
+    try:
+        folder_id = _get_or_create_folder(service, folder_name, parent_id)
+    except Exception as exc:
+        print_error(f"Could not create/find Drive folder: {exc}")
+        return []
+
+    results: list[dict] = []
+
+    for filename, data in items:
+        ext = os.path.splitext(filename)[1].lower()
+        mime = _MIME_FALLBACK.get(ext, "application/octet-stream")
+        link = _upload_single_bytes(service, filename, data, mime, folder_id, make_public=make_public)
+        results.append({"file": filename, "link": link or "upload_failed"})
+
+    uploaded = sum(1 for r in results if r["link"] != "upload_failed")
+    failed = len(results) - uploaded
+
+    console.print()
+    print_success(
+        f"Drive direct-upload complete: "
+        f"[green]{uploaded} uploaded[/green]"
+        + (f", [yellow]{failed} failed[/yellow]" if failed else "")
         + f" — folder: '{folder_name}'"
     )
 

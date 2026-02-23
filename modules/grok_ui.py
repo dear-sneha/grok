@@ -19,7 +19,7 @@ from modules.logger import (
     print_error,
     print_prompt_status,
 )
-from modules.downloader import save_media
+from modules.downloader import save_media, fetch_media_bytes
 
 # ─── Confirmed live selectors (inspected Feb 2026) ────────────────────────────
 
@@ -518,6 +518,7 @@ def run_single_prompt(
         "prompt":      prompt_text,
         "status":      "failed",
         "saved_files": [],
+        "drive_links": [],
         "error":       None,
     }
 
@@ -580,12 +581,41 @@ def run_single_prompt(
             result["error"] = "No media detected after generation"
             return result
 
-        # 6. Save files
-        saved = save_media(page, mode, config, prompt_index, prompt_text, selectors, media)
-        result["saved_files"] = saved
-        result["status"]      = "done" if saved else "failed"
-        if not saved:
-            result["error"] = "Media detected but download failed"
+        # 6. Save / upload files
+        no_local = config.get("no_local_save", False) and config.get("auto_upload_drive", False)
+
+        if no_local:
+            # ── Direct-to-Drive path: no disk writes ──────────────────────────
+            print_info("Direct-to-Drive mode: fetching media into memory …")
+            items = fetch_media_bytes(page, mode, prompt_index, prompt_text, media)
+            if items:
+                from modules.drive_upload import upload_bytes_to_drive
+                print_info("Streaming to Google Drive …")
+                drive_results = upload_bytes_to_drive(items, config)
+                result["drive_links"] = [r["link"] for r in drive_results]
+                result["status"]      = "done" if any(r["link"] != "upload_failed" for r in drive_results) else "failed"
+                if result["status"] == "failed":
+                    result["error"] = "All direct Drive uploads failed"
+            else:
+                result["error"] = "Media detected but in-memory fetch failed"
+        else:
+            # ── Normal path: save to disk, then upload immediately ────────────
+            saved = save_media(page, mode, config, prompt_index, prompt_text, selectors, media)
+            result["saved_files"] = saved
+            result["status"]      = "done" if saved else "failed"
+            if not saved:
+                result["error"] = "Media detected but download failed"
+
+            # Upload to Drive right after each prompt (don't wait for all 149 to finish)
+            if saved and config.get("auto_upload_drive"):
+                try:
+                    from modules.drive_upload import upload_to_drive
+                    print_info(f"Uploading {len(saved)} file(s) to Google Drive …")
+                    drive_results = upload_to_drive(saved, config)
+                    result["drive_links"] = [r["link"] for r in drive_results]
+                except Exception as exc:
+                    print_error(f"Drive upload failed for prompt #{prompt_index}: {exc}")
+
 
     except Exception as exc:
         result["error"] = str(exc)

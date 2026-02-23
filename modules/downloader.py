@@ -8,6 +8,7 @@ Handles:
   - Generating organised output file paths: ./output/DD-MM/N_slug_a.ext
 """
 
+import io
 import os
 import re
 import base64
@@ -29,6 +30,19 @@ def slugify(text: str, max_len: int = 50) -> str:
     text = re.sub(r"[^\w\s-]", "", text)
     text = re.sub(r"\s+", "-", text.strip())
     return text[:max_len].rstrip("-").lower()
+
+
+def get_output_filename(
+    prompt_index: int,
+    prompt_text: str,
+    suffix_index: int,
+    ext: str,
+) -> str:
+    """Build just the filename (no directory creation)."""
+    date_str = date.today().strftime("%d-%m")
+    slug = slugify(prompt_text)
+    letter = ALPHABET[suffix_index % len(ALPHABET)]
+    return f"{date_str}_{prompt_index}_{slug}_{letter}.{ext}"
 
 
 def get_output_path(
@@ -306,3 +320,135 @@ def save_media(
                 print_error(f"Unknown image src format for prompt #{prompt_index}, item {i + 1}")
 
     return saved
+
+
+# ─── In-memory fetch (no disk write) ─────────────────────────────────────────
+
+def fetch_media_bytes(
+    page: Page,
+    mode: str,
+    prompt_index: int,
+    prompt_text: str,
+    media_elements: list,
+) -> list[tuple[str, bytes]]:
+    """
+    Download each media element into memory instead of saving to disk.
+
+    Returns a list of (filename, raw_bytes) tuples.  Callers can then
+    stream those bytes straight to Google Drive or any other destination.
+    """
+    results: list[tuple[str, bytes]] = []
+    is_video = "ToVideo" in mode
+    ext = "mp4" if is_video else "jpg"
+
+    for i, elem in enumerate(media_elements):
+        filename = get_output_filename(prompt_index, prompt_text, i, ext)
+        raw: bytes | None = None
+
+        if is_video:
+            # --- resolve src ---
+            src = ""
+            try:
+                src = elem.get_attribute("src") or ""
+                if not src or not (src.startswith("http") or src.startswith("blob:")):
+                    source_child = elem.query_selector("source[src]")
+                    if source_child:
+                        src = source_child.get_attribute("src") or ""
+            except Exception:
+                pass
+
+            if not src or not (src.startswith("http") or src.startswith("blob:")):
+                from modules.downloader import extract_video_src
+                src = extract_video_src(page) or ""
+
+            if src.startswith("blob:"):
+                # Read blob via JS → base64 → bytes
+                try:
+                    b64 = page.evaluate("""
+                        async (blobUrl) => {
+                            const resp = await fetch(blobUrl);
+                            const buf  = await resp.arrayBuffer();
+                            const bytes = new Uint8Array(buf);
+                            let binary = '';
+                            for (let i = 0; i < bytes.byteLength; i++) {
+                                binary += String.fromCharCode(bytes[i]);
+                            }
+                            return btoa(binary);
+                        }
+                    """, src)
+                    if b64:
+                        raw = base64.b64decode(b64)
+                        print_success(f"Fetched blob into memory: {len(raw)//1024} KB")
+                except Exception as exc:
+                    print_error(f"Blob in-memory fetch failed: {exc}")
+
+            elif src.startswith("http"):
+                # Playwright session request (carries cookies)
+                try:
+                    resp = page.context.request.get(
+                        src,
+                        headers={"Referer": "https://grok.com/"},
+                        timeout=120_000,
+                    )
+                    if resp.ok:
+                        raw = resp.body()
+                        print_success(f"Fetched (session) into memory: {len(raw)//1024} KB")
+                    else:
+                        print_warning(f"Session fetch HTTP {resp.status} — trying httpx")
+                except Exception as exc:
+                    print_warning(f"Session fetch failed ({exc}) — trying httpx")
+
+                if raw is None:
+                    try:
+                        headers = {
+                            "Referer": "https://grok.com/",
+                            "User-Agent": (
+                                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                "Chrome/122.0.0.0 Safari/537.36"
+                            ),
+                        }
+                        buf = io.BytesIO()
+                        with httpx.stream("GET", src, headers=headers, timeout=120, follow_redirects=True) as r:
+                            r.raise_for_status()
+                            for chunk in r.iter_bytes(chunk_size=8192):
+                                buf.write(chunk)
+                        raw = buf.getvalue()
+                        print_success(f"Fetched (httpx) into memory: {len(raw)//1024} KB")
+                    except Exception as exc:
+                        print_error(f"httpx in-memory fetch failed: {exc}")
+
+        else:
+            # Image
+            src = ""
+            try:
+                src = elem.get_attribute("src") or ""
+            except Exception:
+                pass
+
+            if src.startswith("data:image"):
+                try:
+                    _, encoded = src.split(",", 1)
+                    raw = base64.b64decode(encoded)
+                    print_success(f"Decoded base64 image into memory: {len(raw)//1024} KB")
+                except Exception as exc:
+                    print_error(f"Base64 decode failed: {exc}")
+            elif src.startswith("http"):
+                try:
+                    resp = page.context.request.get(
+                        src,
+                        headers={"Referer": "https://grok.com/"},
+                        timeout=60_000,
+                    )
+                    if resp.ok:
+                        raw = resp.body()
+                        print_success(f"Fetched image into memory: {len(raw)//1024} KB")
+                except Exception as exc:
+                    print_error(f"Image in-memory fetch failed: {exc}")
+
+        if raw:
+            results.append((filename, raw))
+        else:
+            print_error(f"Could not fetch media into memory for prompt #{prompt_index}, item {i+1}")
+
+    return results
