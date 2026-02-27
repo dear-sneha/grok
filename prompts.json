@@ -1,26 +1,451 @@
 [
     {
-        "prompt": "Photorealistic cinematic video: A rugged 40-year-old construction worker in high-visibility orange vest, hard hat, welding mask flipped up, heavy gloves, and steel-toed boots welds rebar on a large urban high-rise site at golden dawn. Sparks fly realistically with bright arcs and flying embers, dust particles float in the warm morning light shafts piercing through scaffolding. Camera starts tight on his focused face and hands guiding the torch with precision, then slow smooth push-out to reveal the bustling site behind him—cranes moving, other workers hauling materials, concrete mixer spinning. Natural sweat on brow, subtle breathing motion, realistic fabric creases and tool wear. Ultra-detailed 8K textures, filmic color grade with warm highlights and cool shadows, shallow depth of field, 24fps, documentary realism style, no text or overlays, 8-second clip",
+        "prompt": "Ultra-realistic 4K video: A 35-year-old female carpenter in hi-vis vest and hard hat uses a nail gun to fasten plywood sheathing on exterior wall framing during clear autumn afternoon. Sawdust drifts in slow motion, hammer strikes echo subtly. Camera performs smooth orbiting dolly around her at chest height showing precise nail placement and wood grain detail. Background shows half-framed house and distant fall foliage. Natural skin texture, subtle breathing, realistic recoil of tool. Cinematic shallow depth, warm golden light, documentary realism, 8-second clip",
         "images": [],
         "isConcat": false
     },
     {
-        "prompt": "Ultra-realistic construction site video in midday sun: Group of 5 diverse construction workers in yellow hard hats, reflective vests, work boots, and tool belts pour fresh concrete from a chute into wooden formwork on a foundation slab. One operates the vibrator tool with vibrating motion, another smooths with trowel, concrete flows naturally with realistic splashes and wet sheen. Camera tracks smoothly alongside them at eye level, dust kicks up from boots, sunlight glints off metal tools and wet surface. Authentic heavy labor movements, subtle muscle strain, natural conversation gestures without audio. High-detail photorealism, sharp 4K, cinematic depth of field, natural outdoor lighting with lens flare, documentary B-roll style, 10-second seamless loop potential",
+        "prompt": "Photorealistic construction footage: Young male roofer in fall-arrest harness kneels on steep metal roof installing standing-seam panels under bright midday sun. Wind gently moves safety lines, panel edges click into place. Camera slow push-in from wide aerial view to tight on gloved hands and crimping tool. Sweat beads visible, realistic metal reflections and shadow play. High-detail textures, lens flare, natural motion blur, 24fps, 9-second clip",
         "images": [],
         "isConcat": false
     },
     {
-        "prompt": "Photorealistic interior-exterior video: Inside a tall tower crane cab high above a massive city construction site, a focused female operator in hard hat and safety harness manipulates joysticks precisely, looking out through large windows at the sprawling site below. Camera starts inside cab showing dashboard gauges, hands on controls, subtle head movements tracking the load, then slow pan out through window to reveal swinging steel beam being lowered carefully to workers waiting below. Dust and haze in air, realistic city skyline in distance, golden hour backlight. Ultra-detailed textures on machinery, skin, clothing, natural eye reflections, cinematic realism, shallow focus, 24fps, professional documentary feel, 7-second clip",
+        "prompt": "Cinematic ultra-realistic video: Experienced heavy equipment operator (male, 50s) drives a large wheel loader scooping gravel in a quarry at golden hour. Dust clouds rise realistically, hydraulic sounds implied through motion. Camera tracks parallel to the machine at ground level then rises smoothly to three-quarter view. Detailed tire treads, cab glass reflections, natural body sway with machine movement. Moody orange lighting, 8K sharpness, 10-second clip",
         "images": [],
         "isConcat": false
     },
     {
-        "prompt": "Ultra-realistic locked-angle cinematic video of a busy construction site at midday: Foreground shows a male worker in blue overalls, yellow helmet, gloves, using a jackhammer on concrete—vibrations realistic, dust clouds pulsing outward with each impact. In background, excavator digs, dump truck reverses with beeps, other workers carry planks and tie rebar. Sun moves slowly across scene casting evolving shadows, subtle wind moves caution tape. No fast time-lapse speed—just natural human and machine activity over 8 seconds. Photorealistic details: sweat, dirt accumulation, tool sparks, particle effects. Film-grade color, high dynamic range, 8K sharpness, documentary construction footage aesthetic",
+        "prompt": "Documentary-style 4K clip: Two plumbers in coveralls and knee pads install PEX piping under a raised floor in a modern home build during overcast morning. One cuts pipe with shears, other crimps fittings with tool. Camera handheld following their precise movements, dust motes in soft light from windows. Realistic sweat, tool clinks, pipe flexibility shown clearly. Shallow focus, authentic tradesman behavior, 8-second clip",
         "images": [],
         "isConcat": false
     },
     {
-        "prompt": "Cinematic ultra-realistic evening construction site video: As sun sets behind half-built skyscraper, a tired but satisfied worker in dusty hi-vis jacket and hard hat packs tools into a pickup truck bed—metal clanks naturally, he wipes forehead with sleeve. Other workers in distance wave goodbye, lights on cranes and generators turn on casting orange glows. Camera slow dolly-in from wide establishing shot to medium on the worker's face showing realistic fatigue and pride. Cool blue twilight tones mixed with warm artificial lights, lens flares from headlights, subtle steam from breath in cooling air. Hyper-detailed skin pores, fabric textures, environmental dust settling. 24fps, shallow depth, moody realistic atmosphere, 9-second clip",
+        "prompt": "Photorealistic evening construction video: Electrician on scissor lift at dusk installs LED high-bay fixtures in an industrial warehouse shell. Warm work lights contrast cool blue sky. Camera starts low looking up, then slow crane-up revealing height and scale. Sparks from wire stripping, realistic cable management, subtle breath vapor. Cinematic contrast, lens artifacts, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic video: Masonry worker (female, 30s) lays concrete blocks on a garden retaining wall in light rain. Water beads on blocks and tools, realistic mortar consistency. Camera locked medium shot showing trowel technique and level checking. Rain droplets on hard hat, natural wet fabric texture. Soft diffused lighting, high detail, 7-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic 4K footage: Bulldozer operator pushes earth on highway expansion project at sunrise. Dramatic backlit dust cloud, blade scrapes realistically. Camera low frontal tracking shot then transitions to side view. Operator visible through cab glass making small adjustments. Golden rim light, particle physics, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic construction scene: Drywall finisher sands joint compound on interior wall using pole sander in bright daylight through open windows. Fine white dust swirls naturally. Camera slow circular track around worker showing smooth sanding motion and even finish. Mask visible, realistic arm fatigue signs. High-res textures, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic video: HVAC technician installs ductwork in tight commercial ceiling space using lift. Flashlight beam cuts through dust, sheet metal screws driven with drill. Camera POV from below looking up at focused face and precise tool work. Natural strain, metal creaks, realistic reach. Moody practical lighting, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary 4K clip: Concrete finisher uses bull float to smooth freshly poured slab on large warehouse floor during late afternoon. Long sweeping motions, concrete sheen evolves realistically. Camera tracks backward in front of worker at knee level showing ripple-free surface. Sun flare, subtle knee pad marks, authentic posture, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Ironworker (male, 40s) connects steel beams on high-rise skeleton at midday using impact wrench. Wind moves safety lanyard, bolts tighten with realistic torque vibration. Camera drone-like slow orbit at beam level showing cityscape below and precise alignment. Sweat on neck, detailed bolt threads, natural muscle tension. Sharp 8K, high dynamic range, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic morning construction clip: Land surveyor sets up total station tripod on uneven ground near roadworks site. Adjusts level bubble carefully, sunlight reflects off instrument lens. Camera handheld close follow of hands and eyes, then pull back to show stakes and orange cones. Subtle wind, realistic focus pull, documentary feel, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic 4K video: Excavator operator digs precise trench for utilities in residential area during cloudy morning. Bucket curls naturally, soil falls in realistic clumps. Camera side tracking shot keeping pace with machine movement. Operator glances at grade rod, small cab sway. Detailed tracks, dirt accumulation, natural lighting, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic scene: Painter in white overalls and respirator applies primer to exterior wood trim on two-story house in late spring. Roller leaves even strokes, slight overspray visible. Camera slow push-in from medium to close on brush/roller contact. Birds chirp implied through calm setting, realistic arm rhythm. Soft natural light, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic video: Forklift driver moves pallets of bricks across muddy site after overnight rain. Tires leave deep tracks, subtle slip corrected smoothly. Camera low angle tracking beside forklift showing load stability and operator focus. Puddles reflect machine, realistic hydraulic hiss motion, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary-style clip: Tiler kneels on fresh mortar bed laying large-format porcelain tiles in luxury bathroom build. Uses spacers and level, taps tiles into place with rubber mallet. Camera locked overhead then slow tilt down to show grout line precision. Dust-free environment, natural knee movement, high detail, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic 4K footage: Scaffolder assembles mobile tower scaffold in warehouse renovation at golden hour. Clamps lock with metallic click, platform rises smoothly. Camera circles structure showing safe assembly technique. Hard hat shadow on face, realistic balance shifts, warm rim light, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic video: Dump truck driver backs up to edge of fill area on large earthworks project at dusk. Reverse beeps implied, tailgate rises, gravel pours in controlled stream. Camera rear three-quarter view then slow pan to driver in mirror reflection. Dust in headlights, twilight tones, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic clip: Window installer fits triple-glazed unit into new build frame using suction cups. Glass reflects surroundings, seals compress realistically. Camera interior looking out showing careful alignment and level check. Subtle glass flex, natural grip strength, bright daylight, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic morning scene: Road crew member spreads asphalt with rake behind small paver on quiet suburban street. Material flows evenly, steam rises gently. Camera tracks forward low angle showing rake motion and hot asphalt texture. Hi-vis clothing glows in soft light, authentic effort, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic 4K video: Demolition worker uses handheld breaker on old concrete foundation in overcast weather. Chunks fly realistically, dust pulses with each strike. Camera medium handheld follow showing vibration through arms and body. Safety glasses fog slightly, natural fatigue signs, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic footage: Bridge construction – crane operator lowers pre-cast concrete segment into place during foggy sunrise. Tag lines guided by ground workers, precise alignment. Camera wide establishing then slow zoom to connection point. Mist swirls around load, high detail, moody atmosphere, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Insulation installer blows cellulose into attic space through hose in hot summer afternoon. Mask and goggles on, material puffs out realistically. Camera attic-level tracking showing even coverage and worker posture. Sweat visible, attic heat implied, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary 4K clip: Rebar tier uses pliers and wire to tie reinforcement cage for column pour on high-rise site. Fast precise twists, metal clinks naturally. Camera close orbiting hands then pull back to show full cage scale. Midday sun, detailed wire tension, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic evening scene: Night-shift security guard with flashlight patrols chain-link perimeter fence around large construction site. Beam sweeps across equipment, shadows move realistically. Camera slow tracking beside guard showing alert posture. Artificial lights cast long shadows, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Glazier cuts glass sheet with carbide wheel and breaks along score line cleanly. Suction cups hold pieces, edges smooth. Camera side angle close-up on scoring then break motion. Realistic glass snap sound implied, focused expression, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic 4K clip: Pile driver operator monitors diesel hammer driving steel sheet piles along riverbank at high tide. Hammer drops rhythmically, pile sinks steadily. Camera low frontal with water reflections, then side view of operator. Vibrations visible, industrial atmosphere, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic footage: Landscape laborer plants large palm tree using excavator sling in luxury villa project. Roots protected, tree guided into hole. Camera circles slowly showing team coordination and final plumb check. Bright tropical sun, natural leaf movement, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Elevator mechanic adjusts hydraulic piston in new residential shaft during morning shift. Tools laid out neatly, grease on hands. Camera tight on wrench turns then pull back to full shaft view. Practical work lights, metallic reflections, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary-style clip: Formwork carpenter hammers walers into place on large wall shuttering at dusk. Nails driven with accurate swings, wood grain visible. Camera locked side view then slow dolly-in on hammer impact. Golden light, realistic arm swing, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic 4K video: Interior house painter rolls eggshell finish on living room walls during bright midday with windows open. Paint tray drips realistically, roller leaves subtle texture. Camera slow tracking shot following the roller path then pull back to show even coverage and drop cloth details. Natural arm extension, slight paint speckles on hi-vis sleeve, soft daylight, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic clip: Backhoe operator excavates around existing utilities on urban street repair job in light drizzle. Bucket avoids pipe markers carefully, mud clings to teeth. Camera side low-angle tracking showing precise control and rain on cab glass. Operator wipes fogged window, realistic wiper motion, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic documentary footage: Flooring installer lays engineered hardwood planks with tapping block and mallet in new apartment build. Click-lock system engages smoothly, alignment perfect. Camera low locked shot on floor level showing tongue-and-groove fit then slow rise to worker's focused face. Wood grain reflections, subtle knee movement, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Telecom lineman climbs utility pole using gaffs and belt in rural area at golden hour. Tools jingle on belt, safety strap clips securely. Camera follows climb from ground then transitions to POV looking down at cross-arm work. Wind moves leaves, realistic muscle effort, warm backlight, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic 4K scene: Concrete truck driver washes out chute with hose after pour on residential driveway at late afternoon. Water mixes with leftover mix creating realistic gray slurry. Camera medium side view showing controlled hose stream and worker posture. Sun low, long shadows, detailed water droplets, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary-style clip: Steel erector tightens turnbuckle on guy wire for temporary bracing on bridge repair site during foggy morning. Wrench turns with visible torque, cable tension increases. Camera close orbiting hands then pull back to show full bracing setup. Mist beads on hard hat, moody atmosphere, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Site superintendent reviews blueprints on hood of pickup truck with foreman in dusty parking area at sunrise. Finger traces lines, gestures to nearby foundation. Camera handheld circling duo showing morning light on paper and hi-vis vests. Coffee steam implied, authentic discussion posture, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic 4K footage: Skid steer operator spreads topsoil for landscaping prep on commercial lot under overcast sky. Bucket dumps in controlled piles, smooth grading passes. Camera tracks forward low angle showing tire tracks and soil texture change. Operator leans to check grade, realistic machine bounce, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic clip: Fire sprinkler fitter threads black iron pipe in commercial ceiling during construction phase. Pipe dope applied, fittings tightened with chain wrench. Camera POV from below showing precise turns and sweat on brow. Practical drop lights, metallic sheen, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic morning scene: Traffic control flagger directs vehicles around active roadwork zone with stop/slow paddle. Hi-vis clothing glows, confident stance. Camera locked wide shot then slow zoom to face and hand signals. Morning sun, passing car reflections, natural arm movement, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary 4K video: Stonemason chisels decorative edge on limestone coping for garden wall in soft evening light. Stone dust flies gently, chisel strikes accurate. Camera close side view on tool impact then pull back to show progress. Realistic arm rhythm, golden rim light, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic footage: Tower crane signalman uses hand signals and radio to guide load placement on high-rise roof during clear day. Safety vest flaps slightly, eyes track swinging beam. Camera elevated angle looking down at worker then pan to load connection. Wind, precise gestures, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Waterproofing applicator rolls liquid membrane on balcony deck before tile installation in sunny afternoon. Roller leaves even coat, edges cut in carefully. Camera low tracking showing wet sheen evolution and knee pad marks. Bright reflections, natural posture, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic clip: Asphalt roller operator compacts fresh pavement on highway resurfacing job at dusk. Drums leave smooth pattern, steam rises from hot mix. Camera side tracking keeping pace with roller, then slow rise to show full lane. Orange construction lights glow, detailed tire marks, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic 4K scene: Elevator shaft carpenter installs plywood hoistway walls using screw gun in tall vertical space. Screws driven flush, level checked frequently. Camera vertical tracking upward following worker on scaffold. Practical lighting, dust motes, realistic reach, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Solar panel installer secures module to roof rack with torque wrench in bright midday sun. Panel clicks into place, grounding wire attached. Camera drone-like slow orbit showing array layout and precise tool use. Sweat visible, realistic glare on glass, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary-style clip: Reclaimer operator mixes recycled asphalt pavement in large drum at plant during golden hour. Steam and dust rise realistically, material tumbles evenly. Camera wide side view then slow push-in to control cab. Operator monitors gauges, warm backlight, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic footage: Interior demolition worker removes old drywall with pry bar and hammer in renovation project. Pieces break away naturally, dust clouds pulse. Camera handheld close follow of tool action showing controlled force. Mask on, natural breathing, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic 4K video: Bridge painter sprays anti-corrosive coating on steel girder from swing stage at river crossing during cloudy day. Overspray drifts realistically, even coverage achieved. Camera tracks along stage showing painter movement and river below. Safety harness visible, muted tones, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic clip: Concrete pump operator maneuvers boom to place mix in tight formwork on elevated deck at sunrise. Boom extends smoothly, concrete flows steadily. Camera ground level looking up at boom arc then cut to operator cab. Dramatic backlighting, dust particles, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic scene: HVAC sheet metal worker bends duct elbow using brake press in shop trailer during lunch break. Metal creases cleanly, measurement double-checked. Camera medium side view showing foot pedal action and focused expression. Fluorescent lighting, realistic tool inertia, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Landscaping crew member spreads mulch with wheelbarrow and rake around new trees in office park at late afternoon. Mulch falls evenly, rake evens surface. Camera slow tracking beside worker showing natural gait and arm swing. Golden light through leaves, detailed bark texture, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary 4K footage: Pile testing technician monitors instrumentation during dynamic load test on construction site. Gauges move realistically, hammer drops in background. Camera close on data screen then pull back to full rig setup. Midday sun, authentic concentration, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic clip: Window washer rappels down glass facade of mid-rise building in urban setting during clear morning. Squeegee strokes leave streak-free finish, water drips naturally. Camera follows descent from roof level then side view. Wind moves harness, realistic reach, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Masonry laborer mixes mortar in wheelbarrow with hoe on residential project at midday. Consistent consistency achieved, shovel scoops accurately. Camera low locked shot showing mixing motion and sweat on arms. Bright sun, detailed sand grains, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic 4K scene: Nighttime asphalt crew lays binder course under portable light towers. Screed operator adjusts thickness, roller follows closely. Camera wide establishing then slow dolly-in to screed controls. Artificial lights cast dramatic shadows, steam visible, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic footage: Survey rodman holds prism pole steady while instrument operator takes shot on hilly terrain at dawn. Level bubble centered, pole vertical. Camera side view showing coordination and morning mist. Golden rim light, natural stance, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic clip: Drywall hanger lifts and screws 12-ft sheet to ceiling joists using lift assist in commercial space. Arms extend fully, screws driven flush. Camera low angle looking up at precise placement and tool use. Dust falls gently, realistic strain, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary-style video: Environmental remediation worker samples soil with hand auger on brownfield site during overcast afternoon. Core extracted carefully, placed in jar. Camera close follow of auger turns then medium shot of labeling. Hi-vis and gloves, muted colors, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic 4K video: Finish carpenter installs crown molding in high-end home using miter saw and nailer. Cuts precise, joints tight. Camera orbiting slowly showing angle precision and caulk application. Warm interior lighting, wood grain detail, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic 4K video: Scaffolding dismantler carefully lowers aluminum frame sections to ground level on completed mid-rise project during clear afternoon. Clamps released with metallic snap, panels stacked neatly. Camera slow downward tracking following descent then side view of organized stacking. Natural arm strain, sunlight glints off metal, realistic balance, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic clip: Geotechnical technician drives Shelby tube sampler into soil with hand hammer on test pit edge in rural site preparation. Soil core extrudes smoothly, sample preserved. Camera close side view on hammer strikes then medium shot of tube labeling. Overcast sky, detailed soil texture, authentic posture, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic documentary footage: Acoustic ceiling tile installer fits panels into T-bar grid in open-plan office build. Tiles click into place, level maintained. Camera low angle looking up showing precise cuts around sprinklers and lights. Soft interior lighting, dust-free environment, natural reach, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Heavy haul truck driver maneuvers lowboy trailer with excavator load through narrow site access road at dawn. Wheels turn carefully, dust rises gently. Camera forward tracking from ground level showing load stability and driver focus through mirror. Golden morning light, detailed tire tread, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic 4K scene: Terrazzo polisher operates walk-behind grinder on freshly poured floor in lobby renovation. Diamond pads spin, slurry swirls realistically. Camera locked medium shot following machine path then slow orbit showing gloss development. Mask on, water sheen, even arm movement, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary-style clip: Tower crane maintenance technician inspects hook block and wire rope from work basket at high altitude during light wind. Grease applied, visual checks performed. Camera elevated angle showing careful movements and vast city view below. Safety protocols visible, realistic sway, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic morning video: Concrete saw operator cuts control joints in fresh slab using walk-behind saw with water feed. Blade spins, slurry sprays realistically. Camera side tracking keeping pace with cut line. Dust suppressed, ear protection on, natural forward lean, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic 4K footage: Interior fit-out carpenter installs custom cabinetry doors with concealed hinges in luxury kitchen build. Screwdriver turns precisely, alignment perfect. Camera close orbiting hinges then pull back to full cabinet view. Warm wood tones, detailed grain, focused expression, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic clip: Stormwater pipe layer places reinforced concrete pipe section using excavator sling in trench. Bell-and-spigot joint aligned, bedding material compacted. Camera trench-level side view showing careful lowering and joint seal. Mud on gloves, realistic machine coordination, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Safety officer conducts toolbox talk with small crew around pickup tailgate at site entrance in early fog. Gestures to checklist, workers nod attentively. Camera handheld circling group showing hi-vis clothing and morning mist. Authentic interaction, soft diffused light, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary 4K scene: Epoxy flooring applicator spreads self-leveling compound with notched trowel in cleanroom environment. Material flows evenly, bubbles escape naturally. Camera low locked shot on trowel motion then slow rise to show coverage progress. Gloved hands, sterile setting, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic footage: Tunnel boring machine operator monitors cutterhead progress from control cabin deep underground. Gauges flicker, conveyor belt moves spoil. Camera interior cab view showing screens and hand adjustments then pan to tunnel face. Dim artificial lighting, focused concentration, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Exterior cladding installer fastens aluminum composite panels to rainscreen system on commercial facade. Rivet gun pops, panels align tightly. Camera drone-like slow push-in showing pattern repetition and precise fastening. Midday sun, reflections on metal, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic clip: Nighttime concrete curing crew lays plastic sheeting and sprinkles water on highway slab under work lights. Water beads roll realistically, sheeting rustles gently. Camera wide establishing then slow dolly-in to sprinkler motion. Dramatic artificial lighting, steam rising, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic 4K scene: Door and hardware technician installs panic bar and closer on commercial entrance during finishing phase. Adjustments made with screwdriver, door swings smoothly. Camera medium side view showing alignment and function test. Interior daylight, realistic latch click, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Vegetation control worker trims overgrown brush around perimeter fence with gas-powered brush cutter at rural substation site. Clippings fly naturally, even cut achieved. Camera tracking beside worker showing gait and tool handling. Bright sun, dust particles, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary-style clip: Post-tensioning specialist stresses tendons in concrete slab using hydraulic jack. Gauge rises steadily, elongation measured. Camera close on jack piston then pull back to full tendon layout. Midday light, precise control, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic footage: Rooftop solar racking assembler tightens bolts on ground-mount system in open field during windy afternoon. Torque wrench clicks, panels prepped nearby. Camera wide then slow orbit showing array alignment and worker posture. Wind moves clothing, realistic effort, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic 4K video: Interior lighting electrician pulls THHN wire through conduit runs in ceiling plenum. Fish tape extends smoothly, wire glides through. Camera POV from below showing careful pulls and sweat on face. Drop lights sway, metallic reflections, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic scene: Earthworks grader operator fine-grades sub-base for parking lot under golden hour sun. Blade scrapes precisely, material redistributes evenly. Camera low frontal tracking then rise to three-quarter view. Dust in backlight, smooth machine motion, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic clip: Waterproof membrane welder heat-fuses overlapping sheets on flat roof using robotic welder in hot summer day. Seams bond cleanly, roller follows. Camera close on heat nozzle then medium shot of worker guiding machine. Sweat visible, realistic heat shimmer, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Site cleanup laborer sweeps debris and collects stray nails with magnetic broom at end of workday. Metal clinks, area improves visibly. Camera slow tracking behind worker showing before/after contrast. Late afternoon light, natural sweeping rhythm, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary 4K footage: Quality control inspector performs slump test on fresh concrete sample at batch plant. Cone fills, rod tamps, slump measured accurately. Camera close on test procedure then pull back to truck chute. Mid-morning sun, detailed concrete texture, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic scene: Glass curtain wall erector positions mullion section using vacuum lifter on high-rise exterior. Glass tilts into place, anchors secured. Camera elevated side view showing precise alignment and team signals. Windy conditions, realistic suction cups, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Irrigation pipe fitter glues PVC fittings for landscape system in new park development. Primer applied, glue spread evenly. Camera medium close-up on joint assembly then pull back to trench layout. Bright daylight, detailed pipe sheen, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Cinematic clip: Final grade inspector walks newly graded site with laser level checking elevations before paving. Rod read, notes taken. Camera follows inspector showing stake flags and smooth surface. Soft evening light, professional demeanor, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic 4K footage: Fireproofing sprayer applies intumescent coating to structural steel beams in parking garage. Spray gun moves steadily, thickness builds realistically. Camera tracks alongside applicator showing even coverage and mask fogging. Industrial lighting, particle mist, 10-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Photorealistic video: Equipment mechanic changes hydraulic filter on excavator during scheduled maintenance in yard. Oil drips controlled, wrench turns smoothly. Camera close on filter housing then medium shot of mechanic wiping hands. Overcast sky, realistic grease marks, 9-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Documentary-style clip: Architectural precast panel setter adjusts shims and braces final facade unit into position. Crane hook released, alignment verified. Camera ground level looking up at panel settling then side view of crew. Late afternoon shadows, precise teamwork, 8-second clip",
+        "images": [],
+        "isConcat": false
+    },
+    {
+        "prompt": "Ultra-realistic final clip: Project closeout photographer documents completed building exterior at sunset for handover records. Camera raised, composition framed carefully. Worker in foreground waves, golden hour glow on facade. Cinematic wide shot, sense of accomplishment, 10-second clip",
         "images": [],
         "isConcat": false
     }

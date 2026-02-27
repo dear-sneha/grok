@@ -49,7 +49,7 @@ DEFAULT_SELECTORS: dict = {
     "generatedVideo": "video[src]",
 
     # Download button
-    "downloadButton": "button[aria-label='Download'], a[download]",
+    "downloadButton": "button[aria-label='Download'], a[download], button:has(svg[aria-label='Download'])",
 
     # Share button
     "shareButton": "button[aria-label='Share']",
@@ -223,32 +223,34 @@ def _click_dropdown_item(page: Page, text: str, label: str = "") -> bool:
 
 def _click_button_in_section(page: Page, section_text: str, button_text: str) -> bool:
     """
-    Click a button inside a settings section (e.g. 'Aspect Ratio', '720p').
+    Click a button inside a settings section (e.g. 'Video Duration', '6s').
 
-    Strategy:
-      1. Find [role='menuitem'] that contains a <p> with the section heading.
-      2. Within that section, find button[aria-label=button_text] first (icon buttons).
-      3. Fall back to button with matching text content.
-      4. Use force=True click to bypass visibility/overlap issues.
+    Strategy based on actual Grok UI structure (Feb 2026):
+      1. Find div[role='group'] that contains a <p> with the section heading (e.g., 'Video Duration')
+      2. Within that group, find button[aria-label=button_text] (most reliable)
+      3. Fall back to button with matching text content
+      4. Use force=True click to bypass visibility/overlap issues
 
-    FIX: Removed the overly broad 'div' fallback that matched the entire page.
+    HTML structure: <div role="group"><p>Video Duration</p><div class="flex flex-row gap-0"><button aria-label="6s">...
     """
     try:
-        # Step 1: Find the section by its <p> heading
-        section = page.locator("[role='menuitem']").filter(
+        # Step 1: Find the section group by its <p> heading
+        # Use a more flexible approach: find the <p> with section text, then go to parent group
+        section_group = page.locator("div[role='group']").filter(
             has=page.locator("p", has_text=re.compile(re.escape(section_text), re.I))
         )
 
-        if section.count() == 0:
-            print_warning(f"Section not found: {section_text}")
+        if section_group.count() == 0:
+            print_warning(f"Section group not found: {section_text}")
             return False
 
-        sec = section.first
+        sec = section_group.first
 
-        # Step 2: aria-label match (most reliable — covers Aspect Ratio icon buttons)
+        # Step 2: Try aria-label match first (most reliable for duration/resolution)
+        # This handles: aria-label="6s", aria-label="10s", aria-label="720p", etc.
         target = sec.locator(f"button[aria-label='{button_text}']")
 
-        # Step 3: Fall back to text content match
+        # Step 3: Fall back to text content match (for aspect ratio buttons with text)
         if target.count() == 0:
             target = sec.locator("button").filter(
                 has_text=re.compile(rf"^{re.escape(button_text)}$", re.I)
@@ -296,9 +298,9 @@ def configure_generation_mode(page: Page, config: dict, prompt_entry: dict, sele
             if not safe_click(page, trigger_sel, "Model select trigger", timeout_ms=5000):
                 return False
             page.wait_for_timeout(700)
-            # Wait until at least one menuitem is present
+            # Wait until at least one menu item/group is present
             try:
-                page.wait_for_selector("[role='menuitem']", state="visible", timeout=3000)
+                page.wait_for_selector("[role='group'], [role='menuitemradio']", state="visible", timeout=3000)
             except Exception:
                 pass
         return True
@@ -317,10 +319,28 @@ def configure_generation_mode(page: Page, config: dict, prompt_entry: dict, sele
     if ensure_menu_open():
         _click_button_in_section(page, "Aspect Ratio", aspect_ratio)
 
-    # 4. Mode (Video / Image collection item)
+    # 4. Mode (Video / Image radio button)
+    # Mode buttons use role="menuitemradio" with aria-checked="true/false"
     if ensure_menu_open():
         mode_text = "Video" if is_video else "Image"
-        _click_dropdown_item(page, mode_text, f"{mode_text} mode")
+        try:
+            # Find the radio button that contains the mode text (Image or Video)
+            mode_btn = page.locator(f"[role='menuitemradio']:has-text('{mode_text}')").first
+            if mode_btn.is_visible():
+                # Check if already selected
+                is_checked = mode_btn.get_attribute("aria-checked") == "true"
+                if not is_checked:
+                    mode_btn.click(timeout=5000)
+                    page.wait_for_timeout(600)
+                    print_info(f"Set Mode: {mode_text}")
+                else:
+                    print_info(f"Mode already set to: {mode_text}")
+            else:
+                print_warning(f"Mode button '{mode_text}' not found or not visible")
+        except Exception as exc:
+            print_warning(f"Error setting mode to {mode_text}: {exc}")
+            # Fallback to old method
+            _click_dropdown_item(page, mode_text, f"{mode_text} mode")
 
     # 5. Image upload (imageToVideo / imageToImage)
     if images and any(k in mode for k in ("imageToVideo", "imageToImage", "componentsToVideo")):
@@ -364,49 +384,54 @@ def get_generation_progress(page: Page, selectors: dict) -> int:
 
 def _collect_videos(page: Page) -> list:
     """
-    Find all video elements in any completed state:
-      - <video src="http...">
-      - <video><source src="http..."></video>
-      - <video src="blob:...">   (Grok sometimes uses blob URLs)
-    Returns list of ElementHandles.
+    Find video elements in the LATEST message (last <article>).
     """
-    found = []
     try:
+        # Target the last article (most recent message)
+        articles = page.query_selector_all("article")
+        if not articles:
+            return []
+        last_article = articles[-1]
+        
+        found = []
         # Direct http src
-        for v in page.query_selector_all("video[src]"):
+        for v in last_article.query_selector_all("video[src]"):
             src = v.get_attribute("src") or ""
             if src.startswith("http") or src.startswith("blob:"):
                 found.append(v)
         # <source> child approach
-        for s in page.query_selector_all("video source[src]"):
+        for s in last_article.query_selector_all("video source[src]"):
             src = s.get_attribute("src") or ""
             if src.startswith("http") or src.startswith("blob:"):
-                parent = page.evaluate("el => el.parentElement", s)
-                if parent:
-                    found.append(s)  # use source element; downloader will handle it
+                found.append(s)
+        return found
     except Exception:
-        pass
-    return found
+        return []
 
 
 def _collect_images(page: Page) -> list:
-    """Find all completed generated images."""
-    found = []
+    """Find completed generated images in the LATEST message."""
     try:
+        articles = page.query_selector_all("article")
+        if not articles:
+            return []
+        last_article = articles[-1]
+
+        found = []
         # CDN images
-        for img in page.query_selector_all("img[alt='Generated image'], img[src*='imagine-public']"):
+        for img in last_article.query_selector_all("img[alt='Generated image'], img[src*='imagine-public']"):
             src = img.get_attribute("src") or ""
             if src.startswith("https://imagine-public"):
                 found.append(img)
         # Fallback: large base64 images
         if not found:
-            for img in page.query_selector_all("img[src^='data:image']"):
+            for img in last_article.query_selector_all("img[src^='data:image']"):
                 src = img.get_attribute("src") or ""
                 if len(src) >= 100_000:
                     found.append(img)
+        return found
     except Exception:
-        pass
-    return found
+        return []
 
 
 def wait_for_media(

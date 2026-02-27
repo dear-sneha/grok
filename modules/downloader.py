@@ -8,7 +8,6 @@ Handles:
   - Generating organised output file paths: ./output/DD-MM/N_slug_a.ext
 """
 
-import io
 import os
 import re
 import base64
@@ -30,19 +29,6 @@ def slugify(text: str, max_len: int = 50) -> str:
     text = re.sub(r"[^\w\s-]", "", text)
     text = re.sub(r"\s+", "-", text.strip())
     return text[:max_len].rstrip("-").lower()
-
-
-def get_output_filename(
-    prompt_index: int,
-    prompt_text: str,
-    suffix_index: int,
-    ext: str,
-) -> str:
-    """Build just the filename (no directory creation)."""
-    date_str = date.today().strftime("%d-%m")
-    slug = slugify(prompt_text)
-    letter = ALPHABET[suffix_index % len(ALPHABET)]
-    return f"{date_str}_{prompt_index}_{slug}_{letter}.{ext}"
 
 
 def get_output_path(
@@ -319,38 +305,41 @@ def save_media(
             else:
                 print_error(f"Unknown image src format for prompt #{prompt_index}, item {i + 1}")
 
-    return saved
+   # ─── Your entire original downloader.py content goes here (unchanged) ─────────
+# (everything from the top imports up to the end of save_media function)
 
+    return saved   # ← this is the last line of your original save_media
 
-# ─── In-memory fetch (no disk write) ─────────────────────────────────────────
-
+# ─── NEW: In-memory fetch for Direct-to-Drive (no local save) ─────────────────
 def fetch_media_bytes(
     page: Page,
     mode: str,
     prompt_index: int,
     prompt_text: str,
     media_elements: list,
-) -> list[tuple[str, bytes]]:
+) -> list[dict]:
     """
-    Download each media element into memory instead of saving to disk.
-
-    Returns a list of (filename, raw_bytes) tuples.  Callers can then
-    stream those bytes straight to Google Drive or any other destination.
+    Fetch generated media as in-memory bytes (never writes to disk).
+    Returns: [{"filename": str, "bytes": bytes, "mime": str}, ...]
     """
-    results: list[tuple[str, bytes]] = []
-    is_video = "ToVideo" in mode
+    items = []
+    is_video = "ToVideo" in mode or mode.lower().startswith("video")
     ext = "mp4" if is_video else "jpg"
+    mime = "video/mp4" if is_video else "image/jpeg"
+
+    slug = slugify(prompt_text)
 
     for i, elem in enumerate(media_elements):
-        filename = get_output_filename(prompt_index, prompt_text, i, ext)
-        raw: bytes | None = None
+        letter = ALPHABET[i % len(ALPHABET)]
+        filename = f"{prompt_index}_{slug}_{letter}.{ext}"
+
+        data: bytes | None = None
 
         if is_video:
-            # --- resolve src ---
-            src = ""
+            src = None
             try:
                 src = elem.get_attribute("src") or ""
-                if not src or not (src.startswith("http") or src.startswith("blob:")):
+                if not (src.startswith("http") or src.startswith("blob:")):
                     source_child = elem.query_selector("source[src]")
                     if source_child:
                         src = source_child.get_attribute("src") or ""
@@ -358,97 +347,86 @@ def fetch_media_bytes(
                 pass
 
             if not src or not (src.startswith("http") or src.startswith("blob:")):
-                from modules.downloader import extract_video_src
-                src = extract_video_src(page) or ""
+                src = extract_video_src(page)
 
-            if src.startswith("blob:"):
-                # Read blob via JS → base64 → bytes
-                try:
-                    b64 = page.evaluate("""
-                        async (blobUrl) => {
-                            const resp = await fetch(blobUrl);
-                            const buf  = await resp.arrayBuffer();
-                            const bytes = new Uint8Array(buf);
-                            let binary = '';
-                            for (let i = 0; i < bytes.byteLength; i++) {
-                                binary += String.fromCharCode(bytes[i]);
-                            }
-                            return btoa(binary);
-                        }
-                    """, src)
-                    if b64:
-                        raw = base64.b64decode(b64)
-                        print_success(f"Fetched blob into memory: {len(raw)//1024} KB")
-                except Exception as exc:
-                    print_error(f"Blob in-memory fetch failed: {exc}")
-
-            elif src.startswith("http"):
-                # Playwright session request (carries cookies)
-                try:
-                    resp = page.context.request.get(
-                        src,
-                        headers={"Referer": "https://grok.com/"},
-                        timeout=120_000,
-                    )
-                    if resp.ok:
-                        raw = resp.body()
-                        print_success(f"Fetched (session) into memory: {len(raw)//1024} KB")
-                    else:
-                        print_warning(f"Session fetch HTTP {resp.status} — trying httpx")
-                except Exception as exc:
-                    print_warning(f"Session fetch failed ({exc}) — trying httpx")
-
-                if raw is None:
-                    try:
-                        headers = {
-                            "Referer": "https://grok.com/",
-                            "User-Agent": (
-                                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                                "Chrome/122.0.0.0 Safari/537.36"
-                            ),
-                        }
-                        buf = io.BytesIO()
-                        with httpx.stream("GET", src, headers=headers, timeout=120, follow_redirects=True) as r:
-                            r.raise_for_status()
-                            for chunk in r.iter_bytes(chunk_size=8192):
-                                buf.write(chunk)
-                        raw = buf.getvalue()
-                        print_success(f"Fetched (httpx) into memory: {len(raw)//1024} KB")
-                    except Exception as exc:
-                        print_error(f"httpx in-memory fetch failed: {exc}")
+            if src:
+                data = _download_to_bytes(page, src)
 
         else:
-            # Image
-            src = ""
+            src = None
             try:
-                src = elem.get_attribute("src") or ""
+                src = elem.get_attribute("src")
             except Exception:
                 pass
 
-            if src.startswith("data:image"):
-                try:
-                    _, encoded = src.split(",", 1)
-                    raw = base64.b64decode(encoded)
-                    print_success(f"Decoded base64 image into memory: {len(raw)//1024} KB")
-                except Exception as exc:
-                    print_error(f"Base64 decode failed: {exc}")
-            elif src.startswith("http"):
-                try:
-                    resp = page.context.request.get(
-                        src,
-                        headers={"Referer": "https://grok.com/"},
-                        timeout=60_000,
-                    )
-                    if resp.ok:
-                        raw = resp.body()
-                        print_success(f"Fetched image into memory: {len(raw)//1024} KB")
-                except Exception as exc:
-                    print_error(f"Image in-memory fetch failed: {exc}")
+            if src and src.startswith("data:image"):
+                data = _base64_to_bytes(src)
+            elif src and src.startswith("http"):
+                data = _download_to_bytes(page, src)
 
-        if raw:
-            results.append((filename, raw))
+        if data:
+            items.append({
+                "filename": filename,
+                "bytes": data,
+                "mime": mime,
+            })
+            size_kb = len(data) // 1024
+            print_success(f"Fetched in-memory: {filename} ({size_kb:,} KB)")
         else:
-            print_error(f"Could not fetch media into memory for prompt #{prompt_index}, item {i+1}")
+            print_error(f"Failed to fetch media item {i+1} for prompt #{prompt_index}")
 
-    return results
+    return items
+
+
+# ─── Private helpers ──────────────────────────────────────────────────────────
+def _download_to_bytes(page: Page, src_url: str, referer: str = "https://grok.com/") -> bytes | None:
+    if src_url.startswith("blob:"):
+        try:
+            b64 = page.evaluate("""
+                async (blobUrl) => {
+                    const resp = await fetch(blobUrl);
+                    const buf = await resp.arrayBuffer();
+                    const bytes = new Uint8Array(buf);
+                    let binary = '';
+                    for (let i = 0; i < bytes.byteLength; i++) {
+                        binary += String.fromCharCode(bytes[i]);
+                    }
+                    return btoa(binary);
+                }
+            """, src_url)
+            return base64.b64decode(b64) if b64 else None
+        except Exception as exc:
+            print_error(f"Blob→bytes failed: {exc}")
+            return None
+
+    # Playwright session (cookies)
+    if page is not None:
+        try:
+            response = page.context.request.get(src_url, headers={"Referer": referer})
+            if response.ok:
+                return response.body()
+        except Exception:
+            pass
+
+    # httpx fallback
+    try:
+        headers = {
+            "Referer": referer,
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        }
+        resp = httpx.get(src_url, headers=headers, timeout=60, follow_redirects=True)
+        resp.raise_for_status()
+        return resp.content
+    except Exception as exc:
+        print_error(f"HTTP→bytes failed: {exc}")
+        return None
+
+
+def _base64_to_bytes(data_url: str) -> bytes | None:
+    try:
+        if "," not in data_url:
+            return None
+        _, encoded = data_url.split(",", 1)
+        return base64.b64decode(encoded)
+    except Exception:
+        return None

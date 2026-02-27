@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  grok:
+    build: .
+    image: grok:vnc
+    container_name: grok-container
+    ports:
+      - "5901:5900"
+    environment:
+      # Increase timeouts for slower container environments
+      - GROK_TIMEOUT=600
+      - PLAYWRIGHT_LAUNCH_ARGS=--disable-dev-shm-usage
+    volumes:
+      # Mount config for easy editing without rebuild
+      - ./config.json:/app/config.json
+      - ./prompts.json:/app/prompts.json
+      - ./output:/app/output
+      - ./browser_profile:/app/browser_profile
+    # Keep container running on exit so you can check logs
+    stdin_open: true
+    tty: true
